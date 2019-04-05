@@ -1,0 +1,5 @@
+/.idea
+/node_modules
+/public_html/js/bootstrap.bundle.min.js
+/public_html/js/jquery.min.js
+/public_html/css
