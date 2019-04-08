@@ -40,11 +40,11 @@ gulp.task('js', function () {
 });
 
 gulp.task('ftp', function () {
-    var projectFolder = '/public_html/bs4';     //project folder
+    var projectFolder = '/skillstaak3';     //project folder
     var conn = ftp.create({
-        host: 'sinners.be',         // FTP host
-        user: 'username',           // FTP username
-        password: 'password',       // FTP password
+        host: 'school.yourivanlaer.be',         // FTP host
+        user: 'school@yourivanlaer.be',           // FTP username
+        password: '9wbbDkf5DAh69itqQagb',       // FTP password
         parallel: 10,
         log: log.info()
     });
