@@ -1,4 +1,19 @@
-index pagin wat is geocaching
-nieuws pagina artikels geocaching
-benodigheden pagina what heb je nodig
-route een kaart met bechrijving van een route
+
+
+
+FASE 0:
+https://www.geocachingengo.be/
+
+- index pagin wat is geocaching
+- nieuws pagina artikels geocaching
+- benodigheden pagina what heb je nodig
+- route een kaart met bechrijving van een route
+
+Kleur : groen
+Icon: fontawesom
+Logo: nog te bekijken
+Fonts: nog te bekijken
+
+
+FASE 1:
+
