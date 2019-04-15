@@ -7,5 +7,5 @@
 GEOCACHING
 
 # Gebruik
-- YouriVLTM : Cards
+- YouriVLTM : Cards, Tooltips
 - vranckxrobin : ...
