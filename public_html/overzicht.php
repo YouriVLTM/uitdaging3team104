@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/yourivanlaer.css">
     <title>Overzicht pagina</title>
     <style>
     #mapid {
@@ -25,7 +25,7 @@
 </head>
 <body class="background-img">
 <!--Nav-->
-<nav class="navbar navbar-expand-lg navbar-light bg-success ml-auto">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary ml-auto">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -89,7 +89,7 @@
 
         <div class="row mt-5 mb-5">
             <div class="col">
-                <h1>Vind al u geo plaatsen</h1>
+                <h1>Overzicht:</h1>
             </div>
         </div>
 
