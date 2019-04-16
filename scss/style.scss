@@ -4,3 +4,18 @@
 //Robin Vranckx
 
 //Youri Van Laer
+@mixin fullBackgroundImg($imgPath,$attachment,$height){
+  background-image: url($imgPath);
+  background-attachment: $attachment;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: $height;
+  min-height: 500px;
+}
+
+.background-img{
+  &-geocaching-people{
+    @include fullBackgroundImg('https://images.pexels.com/photos/760860/pexels-photo-760860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',fixed,100vh);
+  }
+}

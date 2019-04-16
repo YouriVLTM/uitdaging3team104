@@ -1,0 +1,36 @@
+@mixin fullBackgroundImg($imgPath,$attachment,$height){
+  background-image: url($imgPath);
+  background-attachment: $attachment;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: $height;
+  min-height: 500px;
+}
+
+.background-img{
+  &-mounten-brown{
+    //mounten
+    @include fullBackgroundImg('../img/mountenBrown.jpg',fixed,95vh);
+  }
+  &-mounten-green{
+    //greenMounten
+    @include fullBackgroundImg('../img/mountenGreen.jpg',fixed,100vh);
+  }
+  &-quat{
+    //quat
+    @include fullBackgroundImg('../img/quat.jpg',fixed,100vh);
+  }
+  &-kano{
+    //Kano
+    @include fullBackgroundImg('../img/kano.jpg',fixed,100vh);
+  }
+  &-dive{
+    //dive
+    @include fullBackgroundImg('../img/dive.jpg',fixed,100vh);
+  }
+  &-geocaching-people{
+    @include fullBackgroundImg('../img/geocachingPeople.jpg',fixed,100vh);
+
+  }
+}

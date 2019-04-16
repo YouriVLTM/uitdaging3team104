@@ -80,6 +80,36 @@
     "visitors": 3
   },
   {
+    "Id":15,
+    "Name": "Quat",
+    "Description": "",
+    "Date":{
+      "Insert":"12/09/2018",
+      "LastVisited":"maart 10, 2018"
+    },
+    "PictureUrl":"/overzicht/quat.jpg",
+    "Quality":{
+      "Difficult" : "6",
+      "Size": "4",
+      "Categorie":"Extreem",
+      "Reachability":[
+        {
+          "Name": "Muurklimmen",
+          "Icon": "fas fa-shoe-prints"
+        }
+      ]
+    },
+    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
+    "Location":{
+      "Latitude":"51.151000",
+      "Longitude":"5.068533",
+      "Altitude":"0",
+      "Stad": "Meerhout"
+    },
+    "visitors": 200
+
+  },
+  {
     "Id":2,
     "Name": "4. Nature en Adventure",
     "Description": "Deze ligt op de Hoevendijk.",
@@ -123,6 +153,36 @@
 
   },
   {
+    "Id":12,
+    "Name": "Parachute",
+    "Description": "",
+    "Date":{
+      "Insert":"12/09/2018",
+      "LastVisited":"maart 10, 2018"
+    },
+    "PictureUrl":"/overzicht/parachute.jpg",
+    "Quality":{
+      "Difficult" : "9",
+      "Size": "7",
+      "Categorie":"Extreem",
+      "Reachability":[
+        {
+          "Name": "Parachute",
+          "Icon": "fab fa-fly"
+        }
+      ]
+    },
+    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
+    "Location":{
+      "Latitude":"51.151000",
+      "Longitude":"5.068533",
+      "Altitude":"0",
+      "Stad": "Meerhout"
+    },
+    "visitors": 200
+
+  },
+  {
     "Id":3,
     "Name": "5. Nature & Adventure",
     "Description": "Ook deze ligt op de Hoevendijk. <br> Om deze te kunnen loggen moet je over een beek springen, niet alle caches moeten gelogd worden!",
@@ -163,6 +223,36 @@
       "Stad": "Meerhout"
     },
     "visitors": 3
+
+  },
+  {
+    "Id":17,
+    "Name": "Kano",
+    "Description": "",
+    "Date":{
+      "Insert":"12/09/2018",
+      "LastVisited":"maart 10, 2018"
+    },
+    "PictureUrl":"/overzicht/kano.jpg",
+    "Quality":{
+      "Difficult" : "6",
+      "Size": "4",
+      "Categorie":"Extreem",
+      "Reachability":[
+        {
+          "Name": "Muurklimmen",
+          "Icon": "fas fa-shoe-prints"
+        }
+      ]
+    },
+    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
+    "Location":{
+      "Latitude":"51.151000",
+      "Longitude":"5.068533",
+      "Altitude":"0",
+      "Stad": "Meerhout"
+    },
+    "visitors": 200
 
   },
   {
@@ -378,6 +468,36 @@
 
   },
   {
+    "Id":16,
+    "Name": "Ski",
+    "Description": "",
+    "Date":{
+      "Insert":"12/09/2018",
+      "LastVisited":"maart 10, 2018"
+    },
+    "PictureUrl":"/overzicht/ski.jpg",
+    "Quality":{
+      "Difficult" : "6",
+      "Size": "4",
+      "Categorie":"Extreem",
+      "Reachability":[
+        {
+          "Name": "Muurklimmen",
+          "Icon": "fas fa-shoe-prints"
+        }
+      ]
+    },
+    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
+    "Location":{
+      "Latitude":"51.151000",
+      "Longitude":"5.068533",
+      "Altitude":"0",
+      "Stad": "Meerhout"
+    },
+    "visitors": 200
+
+  },
+  {
     "Id":9,
     "Name": "JUTTEPUT",
     "Description": "De Jutteput is de naam van een verdoken grenspaal; die de grens vormt tussen Geel, Meerhout en Mol.\n1519 : eerste verslag van de plaatsing van deze paal op een perkament van 5 meter lang en 65 cm breed....\nHij staat er nog en geeft een historisch punt aan in de begrenzing van Mol en Geel.\n\nHij is gelegen aan de Zeeploop of de Geeploop.\nEigenaardig aan deze loop/beek is dat hij diep in het landschap snijdt. Als je hem richting Mol zou volgen lijkt het wel een Ardeense beek. Op enkele plaatsen loopt hij drie meter onder het niveau van de oever.\nJuist : hij is gegraven. Als afwatering van de Duivelskuil en het Volmolengoor, iets verder richting Mol. Hoewel een afwatering richting Meerhout iets eenvoudiger zou geweest zijn heeft men toch gekozen voor Geel. Wat was hier de oorsprong van ?",
@@ -443,6 +563,156 @@
       "Stad": "Meerhout"
     },
     "visitors": 562
+
+  },
+  {
+    "Id":11,
+    "Name": "Mountainbike",
+    "Description": "",
+    "Date":{
+      "Insert":"12/09/2018",
+      "LastVisited":"maart 10, 2018"
+    },
+    "PictureUrl":"/overzicht/bicycle.png",
+    "Quality":{
+      "Difficult" : "8",
+      "Size": "3",
+      "Categorie":"Extreem",
+      "Reachability":[
+        {
+          "Name": "te voet",
+          "Icon": "fas fa-walking"
+        }
+      ]
+    },
+    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
+    "Location":{
+      "Latitude":"51.151000",
+      "Longitude":"5.068533",
+      "Altitude":"0",
+      "Stad": "Meerhout"
+    },
+    "visitors": 324
+
+  },
+  {
+    "Id":13,
+    "Name": "Drone",
+    "Description": "",
+    "Date":{
+      "Insert":"12/09/2018",
+      "LastVisited":"maart 10, 2018"
+    },
+    "PictureUrl":"/overzicht/drone.png",
+    "Quality":{
+      "Difficult" : "6",
+      "Size": "4",
+      "Categorie":"Extreem",
+      "Reachability":[
+        {
+          "Name": "Drone",
+          "Icon": "fas fa-plane"
+        }
+      ]
+    },
+    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
+    "Location":{
+      "Latitude":"51.151000",
+      "Longitude":"5.068533",
+      "Altitude":"0",
+      "Stad": "Meerhout"
+    },
+    "visitors": 200
+
+  },
+  {
+    "Id":14,
+    "Name": "Muurklimmen",
+    "Description": "",
+    "Date":{
+      "Insert":"12/09/2018",
+      "LastVisited":"maart 10, 2018"
+    },
+    "PictureUrl":"/overzicht/wallClimbing.jpg",
+    "Quality":{
+      "Difficult" : "6",
+      "Size": "4",
+      "Categorie":"Extreem",
+      "Reachability":[
+        {
+          "Name": "Muurklimmen",
+          "Icon": "fas fa-shoe-prints"
+        }
+      ]
+    },
+    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
+    "Location":{
+      "Latitude":"51.151000",
+      "Longitude":"5.068533",
+      "Altitude":"0",
+      "Stad": "Meerhout"
+    },
+    "visitors": 200
+
+  },
+  {
+    "Id":18,
+    "Name": "Tandem",
+    "Description": "",
+    "Date":{
+      "Insert":"12/09/2018",
+      "LastVisited":"maart 10, 2018"
+    },
+    "PictureUrl":"/overzicht/tandem.jpg",
+    "Quality":{
+      "Difficult" : "6",
+      "Size": "4",
+      "Categorie":"Extreem",
+      "Reachability":[
+        {
+          "Name": "Muurklimmen",
+          "Icon": "fas fa-shoe-prints"
+        }
+      ]
+    },
+    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
+    "Location":{
+      "Latitude":"51.151000",
+      "Longitude":"5.068533",
+      "Altitude":"0",
+      "Stad": "Meerhout"
+    },
+    "visitors": 200
+
+  },
+  {
+    "Id":19,
+    "Name": "Duiken",
+    "Description": "",
+    "Date":{
+      "Insert":"12/09/2018",
+      "LastVisited":"maart 10, 2018"
+    },
+    "PictureUrl":"/overzicht/dive.jpg",
+    "Quality":{
+      "Difficult" : "6",
+      "Size": "4",
+      "Categorie":"Extreem",
+      "Reachability":[
+        {
+          "Name": "Muurklimmen",
+          "Icon": "fas fa-shoe-prints"
+        }
+      ]
+    },
+    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
+    "Location":{
+      "Latitude":"51.151000",
+      "Longitude":"5.068533",
+      "Altitude":"0",
+      "Stad": "Meerhout"
+    },
+    "visitors": 200
 
   }
 ]

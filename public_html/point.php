@@ -69,7 +69,9 @@
 
 
     if($Id>=0 && sizeof($json_data)>$Id):
-        $point = $json_data[$Id];
+
+        $key = array_search($Id, array_column($json_data, 'Id'));
+        $point = $json_data[$key];
 
     ?>
 
@@ -125,7 +127,11 @@
                         </div>
                     </div>
 
-                    <p>kategorie : <span class="text-success"><?php echo $point["Quality"]["Categorie"];?></span></p>
+                    <?php if($point["Quality"]["Categorie"] == "easy"): ?>
+                        <p>Categorie : <span class="badge badge-pill badge-success"><?php echo $point["Quality"]["Categorie"];?></span></p>
+                    <?php else: ?>
+                        <p>Categorie : <span class="badge badge-pill badge-danger"><?php echo $point["Quality"]["Categorie"];?></span></p>
+                    <?php endif; ?>
 
                     <p>
                         <!--bereikbaarheid-->

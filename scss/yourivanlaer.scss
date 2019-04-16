@@ -2,10 +2,11 @@
 //youri scss
 @import "YVLvariables";
 
+//opbouw
+@import "YVLreboot";
+@import "YVLbackground";
 
-body{
-  font-family: $lettertype;
-}
+
 
 .background-img{
   &::after{
@@ -48,112 +49,7 @@ body{
 
 }
 
-.test-color{
-  background-color: #818338;
-}
-.back-color{
 
-  height: 94vh;
-  min-height: 500px;
-  /*background-attachment: fixed;*/
-
-  background-image: url('https://gopro.com/content/dam/awards/carousel/GoProAwards_Home_Desktop_expanded_2017_FINAL_carousel2.jpg');
-
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  /*background: rgb(128,131,56);
-  background: linear-gradient(90deg, rgba(128,131,56,1) 0%, rgba(44,55,59,1) 30%);*/
-}
-.back2-color{
-
-  height: 94vh;
-  min-height: 500px;
-  background-attachment: fixed;
-
-  background-image: url('../img/exb4.jpg');
-
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-
-
-  /*background: rgb(44,55,59);
-  background: linear-gradient(90deg, rgba(44,55,59,1) 36%, rgba(3,157,190,1) 83%);*/
-}
-.back3-color{
- /* background-color: #e8e8e8;*/
-/*
-  height: 94vh;
-  min-height: 500px;
-  background-attachment: fixed;
-
-  background-image: url('../img/background.jpg');
-
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-*/
-
-
-  /*background: rgb(44,55,59);
-  background: linear-gradient(90deg, rgba(44,55,59,1) 36%, rgba(3,157,190,1) 83%);*/
-
-  height: 94vh;
-  min-height: 500px;
-  background-attachment: fixed;
-
-  background-image: url('../img/exb3.jpg');
-
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-
-}
-.back4-color{
-  height: 94vh;
-  min-height: 500px;
-  /*background-attachment: fixed;*/
-
-  background-image: url('../img/exb1.jpg');
-
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.back5-color{
-  height: 94vh;
-  min-height: 500px;
-  background-attachment: fixed;
-
-  background-image: url('../img/exb5.jpg');
-
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.back6-color{
-  height: 94vh;
-  min-height: 500px;
-  background-attachment: fixed;
-
-  background-image: url('../img/exb6.jpg');
-
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 /*color
 
 #5e6754
@@ -164,28 +60,3 @@ body{
   width:100%;
 }
 
-/*Extreem*/
-
-
-
-
-.masthead {
-  height: 94vh;
-  min-height: 500px;
-  background-attachment: fixed;
-  /*background-image: url('https://images.unsplash.com/photo-1418662589339-364ad47f98a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1345&q=80');*/
-  background-image: url('https://images.pexels.com/photos/1761282/pexels-photo-1761282.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-
-  background-image: url('  https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-image: url('https://images.pexels.com/photos/2106776/pexels-photo-2106776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-
-  background-image: url('https://images.pexels.com/photos/1125776/pexels-photo-1125776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-image: url('https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1920&w=1080');
-
-  background-image: url('  https://shop.gopro.com/on/demandware.static/-/Library-Sites-sharedGoProLibrary/default/dw14332162/images/software-and-app/img_GoPro_Feed_D.jpg');
-
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
