@@ -1,16 +1,10 @@
-$theme-colors: (
-        "primary": #818338,
-        "danger": purple
-);
-
-// Link to BS4
-@import "../node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
-
+@import "huisstijl";
+//youri scss
+@import "YVLvariables";
 
 
 body{
-  font-family: 'Noto Sans', sans-serif;
+  font-family: $lettertype;
 }
 
 .background-img{
