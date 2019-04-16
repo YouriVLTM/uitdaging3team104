@@ -10,8 +10,7 @@
 <body class="background2-img">
 
 <!--Nav-->
-<nav class="navbar navbar-expand-lg navbar-light bg-primary ml-auto">
-
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-primary ml-auto">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,34 +18,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Benodigdheden</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Overzicht</a>
+                <a class="nav-link" href="overzicht.php">Overzicht</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">extreem geocaching</a>
+                <a class="nav-link" href="extreem.html">extreem geocaching</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Nieuws</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+
         </ul>
 
     </div>
@@ -76,7 +62,7 @@
     ?>
 
     <!-- Container -->
-    <section class="py-6 bg-gray-100 mt-5">
+    <section class="py-6 bg-gray-100 mt-7 mb-5">
         <div class="container">
             <div class="card shadow border-0 h-100">
                 <div class="card-body">
