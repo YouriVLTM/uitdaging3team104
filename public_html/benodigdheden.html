@@ -1,10 +1,218 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="nl" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geocaching">
+    <meta name="author" content="Robin Youri">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home pagina</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/robinvranckx.css">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#818338">
+    <meta name="msapplication-TileColor" content="#818338">
+    <meta name="theme-color" content="#818338">
+
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo/logo.svg" alt="" style="height:50px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="benodigdheden.html">Benodigdheden</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="overzicht.php">Overzicht</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="extreem.html">extreem geocaching</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nieuws.html">Nieuws</a>
+                </li>
 
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--<div id="bannerimage"></div>-->
+<!--END nav-->
+<section class="background-img-geocaching-benodidheden">
+    <div class="container mt-5">
+        <div class="row justify-content-md-center pt-5">
+            <div class="col-5 text-center">
+                <h1>Geocaching</h1>
+                <hr>
+                <h2>Welkom!</h2>
+                <p>Maak kennis met onze geocachers.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+ <section>
+    <div class="container pt-5 pb-5">
+        <div class="row justify-content-around">
+            <div class="col-3 text-center">
+                <h2>Starten!</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-12 col-md-4 text-center mt-3">
+                <h2>1. Zoek een punt</h2>
+                <img class="img-fluid rounded-circle pt-3" src="img/zoekPunt.png" alt="">
+            </div>
+            <div class="col-12 col-md-4 text-center mt-3">
+                <h2>2. Vind de geocach</h2>
+                <img class="img-fluid rounded-circle pt-3" src="img/vindGeocach.jpg" alt="">
+
+            </div>
+            <div class="col-12 col-md-4 text-center mt-3">
+                <h2>3. Deel u ervaring</h2>
+                <img class="img-fluid rounded-circle pt-3" src="img/ervaringDelen.jpg" alt="">
+
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<section>
+    <div class="container pt-5 pb-5">
+        <div class="row justify-content-around">
+            <div class="col-5 text-center">
+                <h2>Optioneele benodidheden!</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+</section
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Random image</h5>
+            </div>
+            <div class="modal-body">
+                <img src="https://placeimg.com/600/337/nature" class="img-fluid" alt="Random image">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small pt-4 bg-primary">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+                <!-- Content -->
+                <h5 class="text-uppercase">Footer Content</h5>
+                <p>Here you can use rows and columns here to organize your footer content.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 4</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 4</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--custom scripts-->
 </body>
 </html>
