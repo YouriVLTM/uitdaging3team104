@@ -1,0 +1,19 @@
+@import "huisstijl";
+
+
+#nieuwsfoto1{
+  width: 100%;
+  background-image: url("../img/1.jpg");
+  height: 405px;
+  background-color: purple;
+  background-position: center;
+}
+#paddingnewspreview{
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#containernieuws{
+  padding:10px;
+}
