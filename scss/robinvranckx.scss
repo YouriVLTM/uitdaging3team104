@@ -4,7 +4,21 @@
 
 #nieuwsfoto1{
   width: 100%;
-  background-image: url("../img/1.jpg");
+  background-image: url("../img/idee.jpg");
+  height: 405px;
+  background-color: purple;
+  background-position: center;
+}
+#nieuwsfoto2{
+  width: 100%;
+  background-image: url("../img/box.jpg");
+  height: 405px;
+  background-color: purple;
+  background-position: center;
+}
+#nieuwsfoto3{
+  width: 100%;
+  background-image: url("../img/woman_in_forest.jpg");
   height: 405px;
   background-color: purple;
   background-position: center;
@@ -64,7 +78,8 @@
   pointer-events: auto;
 }
 .modalWindow > div {
-  width: 500px;
+  width: $breedtemodalWindow;
+  height:$hoogtemodalWindow;
   position: relative;
   margin: 10% auto;
   background: #fff;
