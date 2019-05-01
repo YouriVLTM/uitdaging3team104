@@ -57,7 +57,15 @@
     @include fullBackgroundImg('https://images.pexels.com/photos/2108845/pexels-photo-2108845.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000',fixed,100vh);
   }
 }
+.benodigdheden{
+  float:center;
+}
 
+@media (min-width: 720px){
+  .benodigdheden{
+    width: 720px;
+  }
+}
 
 
 //Modale Vensters
