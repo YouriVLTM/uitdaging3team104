@@ -9,6 +9,8 @@
     <title>Home pagina</title>
 
     <!--Style-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/robinvranckx.css">
@@ -24,25 +26,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script>
-        var modal = document.querySelector(".modal");
-        var trigger = document.querySelector(".trigger");
-        var closeButton = document.querySelector(".close-button");
-
-        function toggleModal() {
-            modal.classList.toggle("show-modal");
-        }
-
-        function windowOnClick(event) {
-            if (event.target === modal) {
-                toggleModal();
-            }
-        }
-
-        trigger.addEventListener("click", toggleModal);
-        closeButton.addEventListener("click", toggleModal);
-        window.addEventListener("click", windowOnClick);
-    </script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
@@ -111,7 +94,9 @@
                 </p>
             </div>
             <div class="col-lg-12" id="paddingnewspreview">
-                <button type="button" class="btn btn-info NieuwsModal" data-toggle="modal" data-target="#myModal">Lees meer</button>
+                <form action="#openModal">
+                    <input class="btn btn-info NieuwsModal" type="submit" value="Click me to open modal window" />
+                </form>
             </div>
         </div>
     </div>
@@ -130,85 +115,26 @@
                     </p>
                 </div>
                 <div class="col-lg-12" id="paddingnewspreview">
-                    <button type="button" class="btn btn-info NieuwsModal" data-toggle="modal" data-target="#myModal">Lees meer</button>
+                    <form action="#openModal">
+                        <input class="btn btn-info NieuwsModal" type="submit" value="Click me to open modal window" />
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<hr>
-
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>Modal Header</h2>
-        </div>
-        <div class="modal-body">
-            <p>Some text in the Modal Body</p>
-            <p>Some other text...</p>
-        </div>
-        <div class="modal-footer">
-            <h3>Modal Footer</h3>
-        </div>
+<!--<a href="#openModal"></a>-->
+<div id="openModal" class="modalWindow">
+    <div>
+        <h2>This is a sample modal window</h2>
+        <p>This is a sample modal window that can be created using CSS3 and HTML5.</p>
+        <a href="#ok" title="Ok" class="ok">Ok</a>
     </div>
-
 </div>
-<script>
-    // Get the modal
-    var modal = document.getElementById('myModal');
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
 
 
-<!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
-    <!--<div class="modal-dialog" role="document">-->
-        <!--<div class="modal-content">-->
-            <!--<div class="modal-header">-->
-                <!--<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>-->
-                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-                    <!--<span aria-hidden="true">&times;</span>-->
-                <!--</button>-->
-            <!--</div>-->
-            <!--<div class="modal-body">-->
-                <!--...-->
-            <!--</div>-->
-            <!--<div class="modal-footer">-->
-                <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+
+
 <!-- Footer -->
 <footer class="page-footer font-small pt-4 bg-primary">
 
