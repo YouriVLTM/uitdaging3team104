@@ -136,7 +136,7 @@
     </div>
 </section>
 
-<section class="bg-secondary">
+<section class="bg-secondary extreem-geochaching">
     <div class="container pt-5 pb-5">
         <div class="row justify-content-around">
             <div class="col-4 text-center">
@@ -147,10 +147,21 @@
 
         <div class="row">
             <div class="col-6">
-                <p>Hou je van uitdagingen en mag het allemaal een beetje meer zijn?</p>
-                <p>Dan is extreem geocaching echt iets voor u!</p>
+                <div class="scroll animation-fadeInLeft" data-animation="fadeInLeft">
+                    <h3 >Wat?</h3>
+                    <p>Hou je van uitdagingen en mag het allemaal een beetje meer zijn?<br>Dan is extreem geocaching echt iets voor u!</p>
+                </div>
+                <div class="scroll animation-fadeInLeft" data-animation="fadeInLeft">
+                    <h3 class="fad">Voorwie?</h3>
+                    <p class="fad">Extreem geocaching is bedoeld voor ervaren geochachers. Zij die wat extra willen. En geocaching op een andere manier willen ervaren.</p>
+                </div>
+                <div class="scroll animation-fadeInLeft" data-animation="fadeInLeft">
+                    <h3 class="fad">Waarom?</h3>
+                    <p class="fad">Met deze uitdaging willen wij een grote doelgroep berijken. En er voor laten zorgen dat het voor jou een echte uitdaging wordt.</p>
+                </div>
             </div>
             <div class="col-6">
+                <img src="https://images.unsplash.com/photo-1551384955-233da563a9bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1513&q=80" class="rounded" style="height:300px" alt="">
             </div>
         </div>
 
@@ -238,6 +249,38 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    function isVisible( row, container ){
+
+        var elementTop = $(row).offset().top,
+            elementHeight = $(row).height(),
+            containerTop = container.scrollTop(),
+            containerHeight = container.height();
+
+        return ((((elementTop - containerTop) + elementHeight) > 0) && ((elementTop - containerTop) < containerHeight));
+    }
+
+    $(window).on('scroll', function (e) {
+        $('.scroll').each(function(){
+            if(isVisible($(this), $(window))){
+
+                // kijken maar 1 keer worden uitgevoerd
+                if(!$(this).hasClass('visible')){
+                    // bekijk de data van animation welke animatie moet worden uitgevoerd!
+                    animationAttr = $(this).data( "animation" );
+                    // die class implementeren
+                    $(this).toggleClass(animationAttr);
+                    // deze klasse visible maken
+                    $(this).addClass('visible');
+                }
+
+
+            };
+        });
+
+
+    });
+</script>
 <!--custom scripts-->
 </body>
 </html>

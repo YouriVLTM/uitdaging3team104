@@ -1,7 +1,7 @@
 //Huistijl importeren
 @import "huisstijl";
 
-@import "huisstijlMixin";
+@import "YVLanimation";
 
 footer{
   a{
@@ -24,6 +24,8 @@ footer{
 //  background-color: purple;
 //  background-position: center;
 //}
+
+/*Youri Van Laer*/
 .background-img{
   &-geocaching-people{
     /*@include fullBackgroundImg('https://images.pexels.com/photos/760860/pexels-photo-760860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',fixed,300px);*/
@@ -35,3 +37,4 @@ footer{
     height: 400px;
   }
 }
+
