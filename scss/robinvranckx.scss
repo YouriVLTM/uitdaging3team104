@@ -1,28 +1,44 @@
 @import "huisstijl";
 @import "RVvariables";
 
+@mixin nieuwsfoto($imgPath){
+  width: 100%;
+  background-image: url($imgPath);
+  height: 405px;
+  background-color: purple;
+  background-position: center;
+}
 
-#nieuwsfoto1{
-  width: 100%;
-  background-image: url("../img/idee.jpg");
-  height: 405px;
-  background-color: purple;
-  background-position: center;
+#nieuwsfoto1 {
+  @include nieuwsfoto("../img/idee.jpg");
 }
-#nieuwsfoto2{
-  width: 100%;
-  background-image: url("../img/box.jpg");
-  height: 405px;
-  background-color: purple;
-  background-position: center;
+#nieuwsfoto2 {
+  @include nieuwsfoto("../img/box.jpg");
 }
-#nieuwsfoto3{
-  width: 100%;
-  background-image: url("../img/woman_in_forest.jpg");
-  height: 405px;
-  background-color: purple;
-  background-position: center;
+#nieuwsfoto3 {
+  @include nieuwsfoto("../img/woman_in_forest.jpg");
 }
+//#nieuwsfoto1{
+//  width: 100%;
+//  background-image: url("../img/idee.jpg");
+//  height: 405px;
+//  background-color: purple;
+//  background-position: center;
+//}
+//#nieuwsfoto2{
+//  width: 100%;
+//  background-image: url("../img/box.jpg");
+//  height: 405px;
+//  background-color: purple;
+//  background-position: center;
+//}
+//#nieuwsfoto3{
+//  width: 100%;
+//  background-image: url("../img/woman_in_forest.jpg");
+//  height: 405px;
+//  background-color: purple;
+//  background-position: center;
+//}
 #paddingnewspreview{
   padding-right: $paddingnewspreviewRightLeft;
   padding-left: $paddingnewspreviewRightLeft;
@@ -103,3 +119,20 @@
   margin: 10% auto;
   background: #fff;
 }
+
+
+////testen voor layout
+//.grid-container {
+//  display: grid;
+//  grid-template-columns: 1fr 1fr 1fr 1fr;
+//  grid-template-rows: 1fr 1fr 1fr;
+//  grid-template-areas: ". image tekst2 ." ". tekst tekst ." ". tekst tekst .";
+//  background-color: white;
+//  max-width: 1000px;
+//}
+//
+//.tekst { grid-area: tekst; background-color: white;}
+//
+//.tekst2 { grid-area: tekst2; background-color: white;}
+//
+//.image { grid-area: image; background-color: white;}

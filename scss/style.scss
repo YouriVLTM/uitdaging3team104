@@ -1,18 +1,28 @@
 //Huistijl importeren
 @import "huisstijl";
 
-//Robin Vranckx
 
-
-/*
-#bannerimage {
-  width: 100%;
-  background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
-  height: 405px;
-  background-color: purple;
-  background-position: center;
+footer{
+  a{
+    color: black;
+  }
 }
-*/
+.footer{
+  text-align: center;
+
+}
+
+.footer-right{
+  text-align: right;
+}
+
+//#bannerimage {
+//  width: 100%;
+//  background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
+//  height: 405px;
+//  background-color: purple;
+//  background-position: center;
+//}
 .background-img{
   &-geocaching-people{
     @include fullBackgroundImg('https://images.pexels.com/photos/760860/pexels-photo-760860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',fixed,100vh);
