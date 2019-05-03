@@ -1,7 +1,12 @@
+//letttertype 2 fonts
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+//breakpoints!!
+
+//KLeuren ->thema ok!
 $theme-colors: (
         "primary": #818338
 );
 
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
