@@ -3,10 +3,10 @@
   background-image: url($imgPath);
   background-attachment: $attachment;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   height: $height;
-  min-height: 500px;
+  /*min-height: 500px;*/
 }
 
 
