@@ -9,6 +9,13 @@
   background-position: center;
 }
 
+
+.div1, div2{
+
+  display: inline-block;
+
+}
+
 #nieuwsfoto1 {
   @include nieuwsfoto("../img/idee.jpg");
 }
@@ -48,14 +55,13 @@
 #containernieuws{
   padding:10px;
 }
-@mixin fullBackgroundImg($imgPath,$attachment,$height){
+@mixin fullBackgroundImg($imgPath){
   background-image: url($imgPath);
-  background-attachment: $attachment;
+  background-attachment: inherit;
   background-size: cover;
-  background-position: center;
+  background-position: 0px -762px;
   background-repeat: no-repeat;
-  height: $height;
-  min-height: 500px;
+  height: 400px;
 }
 
 .NieuwsModal{
@@ -67,26 +73,93 @@
 
 .background-img{
   &-geocaching-nieuws{
-    @include fullBackgroundImg('https://images.pexels.com/photos/920115/pexels-photo-920115.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000',fixed,100vh);
+    @include fullBackgroundImg('https://images.pexels.com/photos/920115/pexels-photo-920115.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000');
   }
   &-geocaching-benodidheden{
-    @include fullBackgroundImg('https://images.pexels.com/photos/2108845/pexels-photo-2108845.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000',fixed,100vh);
+    @include fullBackgroundImg('https://images.pexels.com/photos/2108845/pexels-photo-2108845.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000');
   }
 }
 .benodigdheden{
-  float:center;
-  position: relative;
+  overflow: hidden;
   margin: 0 auto;
+  padding-bottom: 20px;
+  padding-left:10%;
+  padding-right: 10%;
 
 }
-
-@media (min-width: 720px){
-  .benodigdheden{
-    width: 720px;
+.div1{
+  padding:20px;
+  width: 100%;
+  img {
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
+.div2{
+  padding:20px;
+  width: 100%;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+@media (min-width: 1250px){
+  .div1{
+    img {
+      float: left;
+      margin-right: 10px;
+      clear:both;
+    }
+    p {
+      margin-left: 0px;
+      overflow:auto;
+      display:block;
+      padding-left: 10px;
+    }
+  }
+  .div2{
+    img {
+      float: right;
+      margin-right: 10px;
+      clear:both;
+    }
+    p {
+      margin-left: 0px;
+      overflow:auto;
+      display:block;
+      padding-right: 10px;
+    }
+  }
 
+}
+//@media (min-width: 1500px){
+//  .benodigdheden{
+//    width: 1500px;
+//  }
+//}
+
+.modal-body{
+  margin-top: 450px;
+  padding: 50px;
+  text-align: left;
+  h2{
+    text-align: center;
+  }
+  a{
+    text-align: center;
+  }
+}
+
+.container-modal{
+  padding-left:50px;
+  padding-right:50px;
+  h1{
+    padding:50px;
+    text-align: center;
+  }
+
+}
 //Modale Vensters
 .modalWindow {
   position: fixed;
