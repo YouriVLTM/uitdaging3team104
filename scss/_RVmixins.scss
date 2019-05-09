@@ -1,0 +1,16 @@
+@mixin fullBackgroundImg($imgPath){
+  background-image: url($imgPath);
+  background-attachment: inherit;
+  background-size: cover;
+  background-position: 0px -762px;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+@mixin nieuwsfoto($imgPath){
+  width: 100%;
+  background-image: url($imgPath);
+  height: 405px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

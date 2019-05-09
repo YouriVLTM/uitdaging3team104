@@ -1,18 +1,18 @@
 @import "huisstijl";
 @import "RVvariables";
+@import "RVmixins";
 
-@mixin nieuwsfoto($imgPath){
-  width: 100%;
-  background-image: url($imgPath);
-  height: 405px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 
 .div1, div2{
 
   display: inline-block;
+  //padding:20px;
+  //width: 100%;
+  //img {
+  //  max-width: 100%;
+  //  max-height: 100%;
+  //}
 
 }
 
@@ -25,44 +25,26 @@
 #nieuwsfoto3 {
   @include nieuwsfoto("../img/woman_in_forest.jpg");
 }
-//#nieuwsfoto1{
-//  width: 100%;
-//  background-image: url("../img/idee.jpg");
-//  height: 405px;
-//  background-color: purple;
-//  background-position: center;
-//}
-//#nieuwsfoto2{
-//  width: 100%;
-//  background-image: url("../img/box.jpg");
-//  height: 405px;
-//  background-color: purple;
-//  background-position: center;
-//}
-//#nieuwsfoto3{
-//  width: 100%;
-//  background-image: url("../img/woman_in_forest.jpg");
-//  height: 405px;
-//  background-color: purple;
-//  background-position: center;
-//}
+
+.transform{
+  transition: all 2s;
+  width: 200px;
+  max-width: 100%;
+  &:hover{
+    transform: scale(1.8);
+  }
+}
+
 #paddingnewspreview{
   padding-right: $paddingnewspreviewRightLeft;
   padding-left: $paddingnewspreviewRightLeft;
   padding-bottom: $paddingnewspreviewTopBotom;
   padding-top: $paddingnewspreviewTopBotom;
 }
-#containernieuws{
+.containernieuws{
   padding:10px;
 }
-@mixin fullBackgroundImg($imgPath){
-  background-image: url($imgPath);
-  background-attachment: inherit;
-  background-size: cover;
-  background-position: 0px -762px;
-  background-repeat: no-repeat;
-  height: 400px;
-}
+
 
 .NieuwsModal{
   float:right;
@@ -104,6 +86,12 @@
     max-height: 100%;
   }
 }
+@media (min-width: 760px){
+  img{
+    max-width: 100%;
+  }
+
+}
 @media (min-width: 1250px){
   .div1{
     img {
@@ -133,11 +121,6 @@
   }
 
 }
-//@media (min-width: 1500px){
-//  .benodigdheden{
-//    width: 1500px;
-//  }
-//}
 
 .modal-body{
    margin-top: 450px;
@@ -160,7 +143,6 @@
   }
 
 }
-//Modale Vensters
 .modalWindow {
   position: fixed;
   top: 0;
@@ -181,10 +163,7 @@
     opacity:1;
     pointer-events: auto;  }
 }
-//.modalWindow:target {
-//  opacity:1;
-//  pointer-events: auto;
-//}
+
 .modalWindow > div {
   width: $breedtemodalWindow;
   height:$hoogtemodalWindow;
@@ -200,20 +179,3 @@
     margin-right: 30px;
   }
 }
-
-
-////testen voor layout
-//.grid-container {
-//  display: grid;
-//  grid-template-columns: 1fr 1fr 1fr 1fr;
-//  grid-template-rows: 1fr 1fr 1fr;
-//  grid-template-areas: ". image tekst2 ." ". tekst tekst ." ". tekst tekst .";
-//  background-color: white;
-//  max-width: 1000px;
-//}
-//
-//.tekst { grid-area: tekst; background-color: white;}
-//
-//.tekst2 { grid-area: tekst2; background-color: white;}
-//
-//.image { grid-area: image; background-color: white;}
