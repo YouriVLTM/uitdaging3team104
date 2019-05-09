@@ -148,8 +148,8 @@
         <div style="width: 40%">
             <img src="img/idee.jpg" alt="idee" style="float: left; width: 500px;">
         </div>
-        <div>
-            <p style="width: 40%;margin-top: 50px;float: right;margin-right: 30px;">Ben je gestart met mystery caches (ook wel puzzelcaches genoemd) en heb je geen idee waar te beginnen? Je bent niet de enige. Veel geocachers voelen zich overweldigd door mystery caches, maar vaak zijn deze ‘mystery’s’ niet zo eng als ze wel lijken. Je moet gewoon starten met het verzamelen van je eigen “puzzel-trucjes”, om daar vervolgens profijt van te hebben bij het oplossen van volgende mystery caches.</p>
+        <div class="modal-inleiding">
+            <p >Ben je gestart met mystery caches (ook wel puzzelcaches genoemd) en heb je geen idee waar te beginnen? Je bent niet de enige. Veel geocachers voelen zich overweldigd door mystery caches, maar vaak zijn deze ‘mystery’s’ niet zo eng als ze wel lijken. Je moet gewoon starten met het verzamelen van je eigen “puzzel-trucjes”, om daar vervolgens profijt van te hebben bij het oplossen van volgende mystery caches.</p>
         </div>
         <div class="modal-body">
         <h2 >Wat voor trucs zijn dat, die je verzamelt?</h2>
@@ -185,6 +185,8 @@
             bron van dit artikel: <a href="https://www.geocaching.nl/hoe-los-je-mysterycaches-puzzelcaches-op/">https://www.geocaching.nl/hoe-los-je-mysterycaches-puzzelcaches-op/</a>
         </p>
         <a href="#ok" title="Ok" class="ok">Ok</a>
+            <button class="button1">kleiner lettertype</button>
+            <button class="button2">groter lettertype</button>
         </div>
     </div>
 </div>
@@ -196,8 +198,8 @@
         <div style="width: 40%">
             <img src="img/box.jpg" alt="box" style="float: left; width: 500px;">
         </div>
-        <div>
-            <p style="width: 40%;margin-top: 50px;float: right;margin-right: 30px;">n 18 jaar tijd is geocaching uitgegroeid van een enkele verstopte container in de bossen van Oregon (USA) tot een wereldwijde game met jaarlijks meer dan 3 miljoen actieve deelnemers en meer dan 3 miljoen geocaches. In het afgelopen jaar publiceerden de gezamenlijke vrijwillige Geocaching Reviewers bijna 8.085 caches per week.
+        <div class="modal-inleiding">
+            <p >En 18 jaar tijd is geocaching uitgegroeid van een enkele verstopte container in de bossen van Oregon (USA) tot een wereldwijde game met jaarlijks meer dan 3 miljoen actieve deelnemers en meer dan 3 miljoen geocaches. In het afgelopen jaar publiceerden de gezamenlijke vrijwillige Geocaching Reviewers bijna 8.085 caches per week.
 
                 Deze groei betekent dat je bijna overal ter wereld een geocache in de buurt kunt vinden. Maar het betekent ook dat de verzadiging aan geocaches toeneemt. In steeds meer gebieden wordt het moeilijk om een ​​locatie te vinden om een ​​cache te plaatsen.</p>
         </div>
@@ -228,6 +230,8 @@
                 bron van dit artikel: <a href="https://www.geocaching.nl/vier-tips-voor-het-verbergen-van-goede-geocaches/">https://www.geocaching.nl/vier-tips-voor-het-verbergen-van-goede-geocaches/</a>
             </p>
             <a href="#ok" title="Ok" class="ok">Ok</a>
+            <button class="button1">kleiner lettertype</button>
+            <button class="button2">groter lettertype</button>
         </div>
     </div>
 </div>
@@ -238,7 +242,7 @@
         <div style="width: 40%">
             <img src="img/woman_in_forest.jpg" alt="idee" style="float: left; width: 500px;">
         </div>
-        <div>
+        <div >
             <p style="width: 40%;margin-top: 50px;float: right;margin-right: 30px;">Het belangrijkste bij geocaching is natuurlijk dat je het leuk vindt en dat je het leuk blijft vinden. Probeer daarom zoveel mogelijk de volgende tien fouten te voorkomen, zodat je je kunt blijven focussen op het belangrijkste deel van het geocachen – het vinden van geocaches!</div>
             <p style="width: 40%;margin-top: 50px;float: right;margin-right: 30px;"><strong>Fout 1: Vergeten een pen mee te nemen</strong>
                 Een klassieke fout, en het overkomt ons allemaal wel eens! Zorg dus dat je altijd een extra pen bij je hebt: in je auto, je jas, of bij je telefoon zodat je er altijd één bij de hand hebt.
@@ -273,9 +277,43 @@
             bron van dit artikel: <a href="https://www.geocaching.nl/10-fouten-die-je-niet-moet-maken-bij-het-geocachen/">https://www.geocaching.nl/10-fouten-die-je-niet-moet-maken-bij-het-geocachen/</a>
         </p>
             <a href="#ok" title="Ok" class="ok">Ok</a>
+            <button class="button1">kleiner lettertype</button>
+            <button class="button2">groter lettertype</button>
         </div>
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.button1').first().click(function(){
+            console.log('knop A');
+            var fontSize = parseInt($('.container-modal').css('font-size'));
+            fontSize=fontSize-10;
+            $('.container-modal').css('font-size',fontSize+'px');
+            var hoogte=parseInt($('.modal-inleiding > p').css( "height" ));
+            console.log(hoogte);
+            if(hoogte<450)
+            {
+                hoogte=450;
+            }
+            $('.modal-body').css('marginTop',hoogte+'px');
+
+        })
+
+        $('.button2').click(function(){
+            console.log('knop B');
+            var fontSize = parseInt($('.container-modal').css('font-size'));
+            var hoogte=parseInt($('.modal-inleiding > p').css( "height" ));
+            console.log(hoogte);
+            var margint = parseInt($('.modal-body').css('marginTop'));
+            $('.modal-body').css('marginTop',hoogte+margint+'px');
+            fontSize=fontSize+10;
+            $('.container-modal').css('font-size',fontSize+'px');
+        })
+
+    });
+</script>
 
 <!-- Footer -->
 <footer class="page-footer font-small pt-4 bg-primary">
@@ -318,8 +356,8 @@
 <!-- Footer -->
 
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+<!--<script src="js/jquery.min.js"></script>-->
+<!--<script src="js/bootstrap.bundle.min.js"></script>-->
 <!--custom scripts-->
 </body>
 </html>
