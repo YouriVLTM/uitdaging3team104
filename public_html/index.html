@@ -99,15 +99,15 @@
 
 
         <div class="row justify-content-around">
-            <div class="col-12 col-md-4 text-center mt-3">
+            <div class="col-12 col-md-4 text-center mt-3 scroll notvisible" data-animation="fadeIn" data-animation-delay="0s">
                 <h2 class="pb-3">1. Zoek een punt</h2>
                 <img class="img-fluid rounded-circle border border-primary" src="img/zoekPunt.png" alt="">
             </div>
-            <div class="col-12 col-md-4 text-center mt-3">
+            <div class="col-12 col-md-4 text-center mt-3 scroll notvisible" data-animation="fadeIn" data-animation-delay="0.3s">
                 <h2 class="pb-3">2. Vind de geocach</h2>
                 <img class="img-fluid rounded-circle border border-primary" src="img/vindGeocach.jpg" alt="">
             </div>
-            <div class="col-12 col-md-4 text-center mt-3">
+            <div class="col-12 col-md-4 text-center mt-3 scroll notvisible" data-animation="fadeIn" data-animation-delay="0.6s">
                 <h2 class="pb-3">3. Deel u ervaring</h2>
                 <img class="img-fluid rounded-circle border border-primary" src="img/ervaringDelen.jpg" alt="">
 
@@ -116,7 +116,7 @@
         </div>
         <div class="row justify-content-md-center mt-5">
             <div class="col-4">
-                <a href="overzicht.php" class="btn btn-outline-primary btn-block">Start nu!</a>
+                <a href="overzicht.php" class="btn btn-outline-primary btn-block scroll notvisible" data-animation="fadeIn" data-animation-delay="0.9s">Start nu!</a>
             </div>
         </div>
 
@@ -162,15 +162,15 @@
 
         <div class="row">
             <div class="col-6">
-                <div class="scroll animation-fadeInLeft" data-animation="fadeInLeft">
+                <div class="scroll notvisible" data-animation="fadeInLeft" data-animation-delay="0s">
                     <h3 >Wat?</h3>
                     <p>Hou je van uitdagingen en mag het allemaal een beetje meer zijn?<br>Dan is extreem geocaching echt iets voor u!</p>
                 </div>
-                <div class="scroll animation-fadeInLeft" data-animation="fadeInLeft">
+                <div class="scroll notvisible" data-animation="fadeInLeft" data-animation-delay="0.5s">
                     <h3 class="fad">Voorwie?</h3>
                     <p class="fad">Extreem geocaching is bedoeld voor ervaren geochachers. Zij die wat extra willen. En geocaching op een andere manier willen ervaren.</p>
                 </div>
-                <div class="scroll animation-fadeInLeft" data-animation="fadeInLeft">
+                <div class="scroll notvisible" data-animation="fadeInLeft" data-animation-delay="1s">
                     <h3 class="fad">Waarom?</h3>
                     <p class="fad">Met deze uitdaging willen wij een grote doelgroep berijken. En er voor laten zorgen dat het voor jou een echte uitdaging wordt.</p>
                 </div>
@@ -354,11 +354,16 @@
 
                 // kijken maar 1 keer worden uitgevoerd
                 if(!$(this).hasClass('visible')){
+                    console.log(this);
                     // bekijk de data van animation welke animatie moet worden uitgevoerd!
                     animationAttr = $(this).data( "animation" );
+                    animationDelay = $(this).data( "animation-delay" );
+                    console.log(animationDelay);
+                    $(this).css('animation-delay',animationDelay);
                     // die class implementeren
                     $(this).toggleClass(animationAttr);
                     // deze klasse visible maken
+                   // $(this).removeClass('notvisible');
                     $(this).addClass('visible');
                 }
 
