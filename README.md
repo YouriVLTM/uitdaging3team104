@@ -10,5 +10,5 @@ GEOCACHING
 www.geocachingengo.be of .nl
 
 # Gebruik
-- YouriVLTM : Cards, Tooltips
+- YouriVLTM : Cards, Tooltips, navs
 - vranckxrobin : ...

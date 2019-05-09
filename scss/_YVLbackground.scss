@@ -23,4 +23,7 @@
     @include fullBackgroundImg('../img/geocachingPeople.jpg',fixed,100vh);
 
   }
+  &-test{
+    @include fullBackgroundImg('https://images.unsplash.com/photo-1509725525985-dae687277f7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80',cover,35vh);
+  }
 }

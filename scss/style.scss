@@ -29,10 +29,10 @@ footer{
 .background-img{
   &-geocaching-people{
     /*@include fullBackgroundImg('https://images.pexels.com/photos/760860/pexels-photo-760860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',fixed,300px);*/
-    background-image: url(https://images.pexels.com/photos/760860/pexels-photo-760860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image: url("../img/index/banner1.jpg");
     background-attachment: inherit;
     background-size: cover;
-    background-position: 0px -762px;
+    background-position: 0px 0px;
     background-repeat: no-repeat;
     height: 400px;
   }
