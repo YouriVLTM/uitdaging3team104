@@ -10,6 +10,7 @@
 
     <!--Style-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="css/robinvranckx.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!--Favicon-->
@@ -126,12 +127,26 @@
 <section>
     <div class="container pt-5 pb-5">
         <div class="row justify-content-around">
-            <div class="col-4 text-center">
-                <h2>Benodigdheden?</h2>
+            <div class="col-3 text-center">
+                <h2>Benodigdheden</h2>
                 <hr>
             </div>
         </div>
-
+        <div class="row justify-content-around">
+            <div class="col-12 col-md-4 text-center mt-3">
+                <i class="fas fa-user-circle fa-6x"></i>
+                <p>Maak een account via de website of met de Geocaching® app om de kaart met alle nabije geocaches te bekijken.</p>
+            </div>
+            <div class="col-12 col-md-4 text-center mt-3">
+                <i class="fas fa-mobile-alt fa-6x"></i>
+                <p>Gebruik de app op je telefoon om naar een nabij geocache te gaan.Je zou hiervoor ook een geocaching gps voor kunnen gebruiken.</p>
+            </div>
+        </div>
+        <div class="row justify-content-md-center mt-5">
+            <div class="col-4">
+                <a href="benodigdheden.html" class="btn btn-outline-primary btn-block">Bekijke nu wat je nog nodig hebt!</a>
+            </div>
+        </div>
 
     </div>
 </section>
@@ -182,6 +197,26 @@
                 <h2>Nieuws</h2>
                 <hr>
             </div>
+            <div id="containernieuws">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6" id="nieuwsfoto1">
+                    </div>
+                    <div class="row col-lg-7">
+                        <div class="col-lg-12" id="paddingnewspreview">
+                            <h1>Hoe los je mysterycaches / puzzelcaches op?</h1>
+                        </div>
+                        <div class="col-lg-12" id="paddingnewspreview">
+                            <p>
+                                Ben je gestart met mystery caches (ook wel puzzelcaches genoemd) en heb je geen idee waar te beginnen? Je bent niet de enige. Veel geocachers voelen zich overweldigd door mystery caches, maar vaak zijn deze ‘mystery’s’ niet zo eng als ze wel lijken. Je moet gewoon starten met het verzamelen van je eigen “puzzel-trucjes”, om…                </p>
+                        </div>
+                        <div class="col-lg-12" id="paddingnewspreview">
+                            <form action="#openModal">
+                                <input class="btn btn-info NieuwsModal" type="submit" value="Lees verder" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -205,6 +240,55 @@
     </div>
 </div>
 
+<div id="openModal" class="modalWindow">
+    <div class="container-modal">
+        <h1>Hoe los je mysterycaches / puzzelcaches op?</h1>
+        <div style="width: 40%">
+            <img src="img/idee.jpg" alt="idee" style="float: left; width: 500px;">
+        </div>
+        <div class="modal-inleiding">
+            <p >Ben je gestart met mystery caches (ook wel puzzelcaches genoemd) en heb je geen idee waar te beginnen? Je bent niet de enige. Veel geocachers voelen zich overweldigd door mystery caches, maar vaak zijn deze ‘mystery’s’ niet zo eng als ze wel lijken. Je moet gewoon starten met het verzamelen van je eigen “puzzel-trucjes”, om daar vervolgens profijt van te hebben bij het oplossen van volgende mystery caches.</p>
+        </div>
+        <div class="modal-body">
+            <h2 >Wat voor trucs zijn dat, die je verzamelt?</h2>
+            <p >Zie de “trucjes” als dat wat je elke keer weer leert van een puzzel die je oplost. Veel puzzels gebruiken dezelfde ideeën, dus als je er één oplost kun je diezelfde truc vaak weer gebruiken bij het oplossen van andere soortgelijke puzzels. Hoe meer trucs je kent, hoe gemakkelijker het wordt om andere mystery caches op te lossen. En hoe meer puzzels je oplost, hoe meer trucjes je leert kennen.
+            </p>
+            <h2 >Enkele handige tips om alvast mee aan de slag te gaan:</h2>
+            <p>– Start met mystery caches met een lage moeilijkheidsgraad.
+                – Los puzzels op die gebaseerd zijn op iets waarmee je bekend bent. Als je bijvoorbeeld veel over geschiedenis weet, kun je een geschiedenispuzzel gemakkelijker oplossen dan een ingewikkelde wiskundepuzzel.
+                – Zoek een partner die goed is in dingen waar jij mee worstelt. Samen kun je elkaars kennis aanvullen.
+                – Gebruik bij het puzzelen een pc of laptop in plaats van je telefoon. Er zijn enkele puzzels die je niet alleen met een telefoon kunt oplossen.
+                – Google en andere zoekmachines zijn je vriend!
+                – Woon Geocaching-events bij en vraag ervaren geocachers om je te helpen. Geocachers vinden het leuk andere geocachers te helpen.
+            </p>
+            <h2 >Hieronder alvast enkele standaardtrucs om mee te beginnen:</h2>
+            <h3>Gemarkeerde tekst.</h3><p> Sommige Mystery caches gebruiken een wit lettertype op de pagina dat alleen zichtbaar is als het is gemarkeerd.
+            Ga met je computermuis langs de volledige cachepagina inclusief tekst en afbeeldingen. Als de cursor verandert van een pijl in een wijzende vinger, dan weet je dat je een verborgen link bent tegen gekomen. *
+        </p>
+            <h3>Broncode.</h3><p> Vaak zijn aanwijzingen verborgen in de codering voor een cachepagina. Bekijk de broncode voor die cachepagina, afhankelijk van uw browser.
+            Om mogelijke aanwijzingen te vinden, kiest je een woord / zin uit de beschrijving en gebruikt je de Ctrl + F-functie. Dit zal je naar de gebieden wijzen waar zich mogelijk een bericht verstopt.
+        </p><h3>Bekijk foto’s en afbeeldingen goed.</h3><p> Soms zijn in de eigenschappen van foto’s/afbeeldingen aanwijzingen verborgen.
+        </p><h3>Andere talen.</h3><p> Sommige Mystery caches willen dat je andere talen “decodeert”. Als je de tekst in een online vertaler plaatst en deze naar je eigen taal converteert, leidt dit vaak naar de oplossing.
+        </p><h3>Gemarkeerde tekst.</h3><p> Misschien bevat dit artikel over Mystery caches ook wel een verborgen witte tekst … 😉
+
+            Hieronder vind je nog enkele online bronnen die je wellicht nog meer trucs aanreiken om zelf eens uit te proberen:
+            Geocaching Toolbox
+            Mijn geocachingprofiel
+            En er zijn nog veel meer! Voer maar eens een online zoekopdracht uit voor “geocaching puzzels oplossen”.
+
+            Oké je bent nu voorzien van paar standaardtrucs. Succes met puzzelen !
+
+            Gefeliciteerd! Je hebt de verborgen witte tekst gevonden! Jij bent alvast heel goed bezig!
+
+            bron van dit artikel: <a href="https://www.geocaching.nl/hoe-los-je-mysterycaches-puzzelcaches-op/">https://www.geocaching.nl/hoe-los-je-mysterycaches-puzzelcaches-op/</a>
+        </p>
+            <a href="#ok" title="Ok" class="ok">Ok</a>
+            <!--<button class="button1">kleiner lettertype</button>-->
+            <!--<button class="button2">groter lettertype</button>-->
+        </div>
+    </div>
+</div>
+
 
 <!-- Footer -->
 <footer class="page-footer font-small pt-4 bg-primary">
@@ -222,8 +306,8 @@
             <div class="col-md-4 mt-md-0 mt-3 footer">
 
                 <!-- Content -->
-                <a href="../Uitdaging2team104/index.html">uitdaging 2</a></br>
-                <a href="../Uitdaging2team104/index.html">thomasmore</a>
+                <a href="../Uitdaging2team104/index.html">webbureau</a></br>
+                <a href="https://www.thomasmore.be/">thomasmore</a>
             </div>
             <!-- Grid column -->
 
