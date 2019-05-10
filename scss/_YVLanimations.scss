@@ -24,6 +24,41 @@
   }
 }
 
+@keyframes drone{
+  from{
+    transform: translateX(-150%) translateY(-80%);
+
+  }
+  to{
+    transform: translateX(0%) translateY(0%);
+  }
+}
+
+@keyframes wolk{
+  from{
+    transform: translateX(0%);
+
+  }
+  to{
+    transform: translateX(-150%);
+  }
+}
+
+#drone{
+  animation-name: drone;
+  animation-duration: 2s;
+  animation-iteration-count: unset;
+  animation-timing-function: ease-out;
+  animation-delay:0s;
+}
+#wolk{
+  animation-name: wolk;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay:0s;
+}
+
 .fade{
   &In{
     animation-name: fadeIn;
