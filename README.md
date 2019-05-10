@@ -12,3 +12,8 @@ www.geocachingengo.be of .nl
 # Gebruik
 - YouriVLTM : Cards, Tooltips, navs
 - vranckxrobin : ...
+
+
+
+Youri
+-> globaal variable banner size
