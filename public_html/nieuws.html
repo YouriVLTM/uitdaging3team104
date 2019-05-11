@@ -144,7 +144,7 @@
 <!--<a href="#openModal"></a>-->
 <div id="openModal" class="modalWindow">
     <div class="container-modal">
-        <h1>Hoe los je mysterycaches / puzzelcaches op?</h1>
+        <h1 class="modalh1">Hoe los je mysterycaches / puzzelcaches op?</h1>
         <div style="width: 40%">
             <img src="img/idee.jpg" alt="idee" style="float: left; width: 500px;">
         </div>
@@ -152,10 +152,10 @@
             <p >Ben je gestart met mystery caches (ook wel puzzelcaches genoemd) en heb je geen idee waar te beginnen? Je bent niet de enige. Veel geocachers voelen zich overweldigd door mystery caches, maar vaak zijn deze ‘mystery’s’ niet zo eng als ze wel lijken. Je moet gewoon starten met het verzamelen van je eigen “puzzel-trucjes”, om daar vervolgens profijt van te hebben bij het oplossen van volgende mystery caches.</p>
         </div>
         <div class="modal-body">
-        <h2 >Wat voor trucs zijn dat, die je verzamelt?</h2>
+        <h2 class="modalh2">Wat voor trucs zijn dat, die je verzamelt?</h2>
         <p >Zie de “trucjes” als dat wat je elke keer weer leert van een puzzel die je oplost. Veel puzzels gebruiken dezelfde ideeën, dus als je er één oplost kun je diezelfde truc vaak weer gebruiken bij het oplossen van andere soortgelijke puzzels. Hoe meer trucs je kent, hoe gemakkelijker het wordt om andere mystery caches op te lossen. En hoe meer puzzels je oplost, hoe meer trucjes je leert kennen.
         </p>
-        <h2 >Enkele handige tips om alvast mee aan de slag te gaan:</h2>
+        <h2 class="modalh2" >Enkele handige tips om alvast mee aan de slag te gaan:</h2>
         <p>– Start met mystery caches met een lage moeilijkheidsgraad.
             – Los puzzels op die gebaseerd zijn op iets waarmee je bekend bent. Als je bijvoorbeeld veel over geschiedenis weet, kun je een geschiedenispuzzel gemakkelijker oplossen dan een ingewikkelde wiskundepuzzel.
             – Zoek een partner die goed is in dingen waar jij mee worstelt. Samen kun je elkaars kennis aanvullen.
@@ -163,15 +163,15 @@
             – Google en andere zoekmachines zijn je vriend!
             – Woon Geocaching-events bij en vraag ervaren geocachers om je te helpen. Geocachers vinden het leuk andere geocachers te helpen.
         </p>
-        <h2 >Hieronder alvast enkele standaardtrucs om mee te beginnen:</h2>
-        <h3>Gemarkeerde tekst.</h3><p> Sommige Mystery caches gebruiken een wit lettertype op de pagina dat alleen zichtbaar is als het is gemarkeerd.
+        <h2 class="modalh2" >Hieronder alvast enkele standaardtrucs om mee te beginnen:</h2>
+        <h3 class="modalh3">Gemarkeerde tekst.</h3><p> Sommige Mystery caches gebruiken een wit lettertype op de pagina dat alleen zichtbaar is als het is gemarkeerd.
             Ga met je computermuis langs de volledige cachepagina inclusief tekst en afbeeldingen. Als de cursor verandert van een pijl in een wijzende vinger, dan weet je dat je een verborgen link bent tegen gekomen. *
         </p>
-            <h3>Broncode.</h3><p> Vaak zijn aanwijzingen verborgen in de codering voor een cachepagina. Bekijk de broncode voor die cachepagina, afhankelijk van uw browser.
+            <h3 class="modalh3">Broncode.</h3><p> Vaak zijn aanwijzingen verborgen in de codering voor een cachepagina. Bekijk de broncode voor die cachepagina, afhankelijk van uw browser.
             Om mogelijke aanwijzingen te vinden, kiest je een woord / zin uit de beschrijving en gebruikt je de Ctrl + F-functie. Dit zal je naar de gebieden wijzen waar zich mogelijk een bericht verstopt.
-        </p><h3>Bekijk foto’s en afbeeldingen goed.</h3><p> Soms zijn in de eigenschappen van foto’s/afbeeldingen aanwijzingen verborgen.
-        </p><h3>Andere talen.</h3><p> Sommige Mystery caches willen dat je andere talen “decodeert”. Als je de tekst in een online vertaler plaatst en deze naar je eigen taal converteert, leidt dit vaak naar de oplossing.
-        </p><h3>Gemarkeerde tekst.</h3><p> Misschien bevat dit artikel over Mystery caches ook wel een verborgen witte tekst … 😉
+        </p><h3 class="modalh3">Bekijk foto’s en afbeeldingen goed.</h3><p> Soms zijn in de eigenschappen van foto’s/afbeeldingen aanwijzingen verborgen.
+        </p><h3 class="modalh3">Andere talen.</h3><p> Sommige Mystery caches willen dat je andere talen “decodeert”. Als je de tekst in een online vertaler plaatst en deze naar je eigen taal converteert, leidt dit vaak naar de oplossing.
+        </p><h3 class="modalh3">Gemarkeerde tekst.</h3><p> Misschien bevat dit artikel over Mystery caches ook wel een verborgen witte tekst … 😉
 
             Hieronder vind je nog enkele online bronnen die je wellicht nog meer trucs aanreiken om zelf eens uit te proberen:
             Geocaching Toolbox
@@ -194,7 +194,7 @@
 
 <div id="openModal2" class="modalWindow">
     <div class="container-modal">
-        <h1>Hoe los je mysterycaches / puzzelcaches op?</h1>
+        <h1 class="modalh1">Hoe los je mysterycaches / puzzelcaches op?</h1>
         <div style="width: 40%">
             <img src="img/box.jpg" alt="box" style="float: left; width: 500px;">
         </div>
@@ -238,7 +238,7 @@
 
 <div id="openModal3" class="modalWindow">
     <div class="container-modal">
-        <h1>Hoe los je mysterycaches / puzzelcaches op?</h1>
+        <h1 class="modalh1">Hoe los je mysterycaches / puzzelcaches op?</h1>
         <div style="width: 40%">
             <img src="img/woman_in_forest.jpg" alt="idee" style="float: left; width: 500px;">
         </div>
@@ -286,8 +286,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
     $(document).ready(function(){
-        $('.button1').first().click(function(){
-            console.log('knop A');
+        $('.button1').click(function(){
             var fontSize = parseInt($('.container-modal').css('font-size'));
             fontSize=fontSize-10;
             $('.container-modal').css('font-size',fontSize+'px');
@@ -299,10 +298,23 @@
             }
             $('.modal-body').css('marginTop',hoogte+'px');
 
+            var grooteh1 = parseInt($('.modalh1').css('font-size'));
+            var grooteh2 =parseInt($('.modalh2').css('font-size'));
+            var grooteh3 = parseInt($('.modalh3').css('font-size'));
+
+
+            $(".modalh1").css(
+                'font-size',grooteh1-10+'px'
+            );
+            $(".modalh2").css(
+                'font-size', grooteh2-10+'px'
+            );
+            $(".modalh3").css(
+                'font-size',grooteh3-10+'px'
+            );
         })
 
         $('.button2').click(function(){
-            console.log('knop B');
             var fontSize = parseInt($('.container-modal').css('font-size'));
             var hoogte=parseInt($('.modal-inleiding > p').css( "height" ));
             console.log(hoogte);
@@ -310,6 +322,21 @@
             $('.modal-body').css('marginTop',hoogte+margint+'px');
             fontSize=fontSize+10;
             $('.container-modal').css('font-size',fontSize+'px');
+
+            var grooteh1 = parseInt($('.modalh1').css('font-size'));
+            var grooteh2 =parseInt($('.modalh2').css('font-size'));
+            var grooteh3 = parseInt($('.modalh3').css('font-size'));
+
+            $(".modalh1").css(
+                'font-size',grooteh1+10+'px'
+            );
+            $(".modalh2").css(
+                'font-size', grooteh2+10+'px'
+            );
+            $(".modalh3").css(
+                'font-size',grooteh3+10+'px'
+            );
+
         })
 
 
