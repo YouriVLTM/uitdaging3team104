@@ -175,22 +175,34 @@
     </div>
 </section>
 <section>
-    <div id='WalkingMan'>
+    <div id='wandelen'>
     <div class='ManBody'>
         <div class='body'>
-            <p class='Manhead'></p>
-            <p class='Middlepart'></p>
-            <p class="backpack"></p>
+            <p class='manhoofd'></p>
+            <p class='lichaam'></p>
+            <p class="rugzak"></p>
             <p class='Lhand'></p>
             <p class='Rhand'></p>
         </div>
-        <p class='LLeg'></p>
-        <p class='RLeg'></p>
+        <p class='Lbeen'></p>
+        <p class='Rbeen'></p>
     </div>
 </div>
-    <div class="centerbutton">    <button class=" hideanimatiebutton ">hide</button>
+    <div class="centerbutton">    <button class=" hideanimatiebutton ">verberg animatie</button>
     </div>
 </section>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.hideanimatiebutton').click(function () {
+            if($(this).parent().next().is(":visible")){
+                console.log('hidden');
+            }
+            $(this).parent().prev().toggle();
+        })
+    });
+</script>
 
 <!-- Modal -->
 <div class="modal fade" id="imageModal">

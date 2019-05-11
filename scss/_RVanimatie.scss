@@ -1,4 +1,4 @@
-#WalkingMan {
+#wandelen {
   background: #FFF;
   width: 700px;
   height: 150px;
@@ -6,12 +6,13 @@
   text-align: center;
   background-image: url('../img/huis.jpg');
   background-repeat: no-repeat;
+  display: none;
 }
 .body {
   float:left;
   position: absolute;
 }
-.backpack{
+.rugzak{
   background: #000;
   height: 40px;
   width: 10px;
@@ -44,7 +45,7 @@
     opacity: 0;
   }
 }
-.Manhead {
+.manhoofd {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -54,7 +55,7 @@
   margin-left: 0px;
 }
 
-.Middlepart {
+.lichaam {
   background: #000;
   height: 40px;
   width: 10px;
@@ -72,7 +73,7 @@
   background: #000;
   float:left;
 }
-.LLeg, .RLeg {
+.Lbeen, .Rbeen {
   margin-top: 80px;
   margin-left: -5px;
   height: 50px;
@@ -86,12 +87,12 @@
 }
 
 
-.Lhand, .RLeg {
+.Lhand, .Rbeen {
   -webkit-transform-origin: 0 0;
   -webkit-animation: movement1 0.5s alternate infinite ease-out;
 
 }
-.Rhand, .LLeg {
+.Rhand, .Lbeen {
   -webkit-transform-origin: 0 0;
   -webkit-animation: movement2 0.5s alternate infinite ease-in;
 }
@@ -137,14 +138,14 @@
   /*	from {margin-left:30px;}
       to {margin-left:600px;}*/
 }
-@-webkit-keyframes backpack {
-  0%{
-    display: all;
-  }
-  100%{
-    display: all;
-  }
-}
+//@-webkit-keyframes rugzak {
+//  0%{
+//    display: all;
+//  }
+//  100%{
+//    display: all;
+//  }
+//}
 
 .hideanimatiebutton{
   height:40px;
@@ -154,4 +155,14 @@
 }
 .centerbutton{
   text-align: center;
+  display: none;
+}
+
+@media (min-width: 800px) {
+  #wandelen{
+    display: block;
+  }
+  .centerbutton{
+    display: block;
+  }
 }
