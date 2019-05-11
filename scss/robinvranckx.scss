@@ -47,10 +47,10 @@
 
 .background-img{
   &-geocaching-nieuws{
-    @include fullBackgroundImg('https://images.pexels.com/photos/920115/pexels-photo-920115.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000');
+    @include fullBackgroundImg('../img/nieuws.jpeg');
   }
   &-geocaching-benodidheden{
-    @include fullBackgroundImg('https://images.pexels.com/photos/2108845/pexels-photo-2108845.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000');
+    @include fullBackgroundImg('../img/benodigdheden.jpeg');
   }
 }
 .benodigdheden{
