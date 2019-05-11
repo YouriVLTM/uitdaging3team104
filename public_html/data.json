@@ -35,7 +35,18 @@
         }
       ]
     },
-    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
+    "Reviews": [
+      {
+        "name":"Youri Van Laer",
+        "datum":"2 min geleden",
+        "text":"fantastisch"
+      },
+      {
+        "name":"Lorenzo Van Laer",
+        "datum":"20 min geleden",
+        "text":"Geweldig"
+      }
+    ],
     "Location":{
       "Latitude":"51.1655700",
       "Longitude":"4.9891700",

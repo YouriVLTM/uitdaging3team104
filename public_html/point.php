@@ -165,31 +165,67 @@
                 </div>
             </div>
 
+        <?php if($point["Reviews"] != null or $point["Reviews"].sizeof() > 0): ?>
            <div class="row">
                <div class="col-sm-12 col-md-8">
                    <h2>Reviews</h2>
                    <hr>
-                    <div class="row">
-                        <div class="col-sm-2 col-lg-1">
-                            <p><i class="fas fa-user-circle fa-3x"></i></p>
-                        </div>
-                        <div class="col-sm-10 col-lg-11">
-                            <p>Youri Van Laer <span>2 min geleden</span></p>
-                            <p>Deze gelogd tijdens het rondje Nature & Adventure</p>
-                        </div>
-                    </div>
 
-                    <hr>
+                   <?php foreach($point["Reviews"] as $review): ?>
                     <div class="row">
                         <div class="col-sm-2 col-lg-1">
                             <p><i class="fas fa-user-circle fa-3x"></i></p>
                         </div>
                         <div class="col-sm-10 col-lg-11">
-                            <p>Youri Van Laer <span>2 min geleden</span></p>
+                            <p><?php echo $review["name"] ?> <span><?php echo $review["datum"] ?></span></p>
+                            <p><?php echo $review["text"] ?></p>
                         </div>
                     </div>
+                    <hr>
+                   <?php endforeach ?>
+
+                   <div class="row">
+                       <div class="col-sm-2 col-lg-1">
+                           <p><i class="fas fa-user-circle fa-3x"></i></p>
+                       </div>
+                       <div class="col-sm-10 col-lg-11">
+
+                           <div class="contact-form border-right-2 text-left ml-2 pr-4">
+                               <div class="form-row">
+                                   <div class="form-group col-md-6">
+                                       <label for="inputEmail4">Naam</label>
+                                       <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                   </div>
+                                   <div class="form-group col-md-6">
+                                       <label for="inputPassword4">Password</label>
+                                       <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                   </div>
+                               </div>
+
+
+
+
+                               <div class="form-group">
+                                   <label for="comment">Bericht:</label>
+                                   <textarea class="form-control" rows="5" id="comment" name="comment" placeholder="Schrijf uw bericht" required=""></textarea>
+                               </div>
+
+                               <div class="form-group">
+                                   <button type="submit" class="btn btn-outline-success btn-default btn-block">verzenden</button>
+                               </div>
+                           </div>
+
+                           <p></p>
+                           <p></p>
+                       </div>
+                   </div>
+
+
+
+
                 </div>
            </div>
+        <?php endif ?>
 
                 </div>
             </div>
