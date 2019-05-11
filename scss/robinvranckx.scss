@@ -1,7 +1,7 @@
 @import "huisstijl";
 @import "RVvariables";
 @import "RVmixins";
-
+@import "RVanimatie";
 
 
 .div1, div2{
@@ -174,8 +174,6 @@
     margin-right: 30px;
   }
 }
-
-//test
 .modalh1{
    font-size: 40px;
  }
