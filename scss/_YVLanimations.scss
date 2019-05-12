@@ -23,6 +23,18 @@
     opacity: 1;
   }
 }
+@keyframes fadeInOut{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
 
 @keyframes drone{
   from{
@@ -35,14 +47,42 @@
 }
 
 @keyframes wolk{
-  from{
-    transform: translateX(0%);
+   from{
+     transform: translateX(0%);
+
+   }
+   to{
+     transform: translateX(-150%);
+   }
+ }
+
+
+@keyframes borderLightUp{
+  0%{
+    border-width: 0.2px;
+    border-style: solid;
+    border-color: #808338ab;
+    border-radius: .25rem;
+    box-shadow: 0 0 0 0.3rem rgba(128, 131, 56, 0.43);
+  }
+  25% {
+    border-width: 0.5px;
 
   }
-  to{
-    transform: translateX(-150%);
+  50% {
+    border-width: 1px;
+    box-shadow: 0 0 0 0.6rem rgba(128, 131, 56, 0.43);
+  }
+  75%{
+    border-width: 0.5px;
+    box-shadow: 0 0 0 0.3rem rgba(128, 131, 56, 0.43);
+  }
+  100%{
+    border: none;
+    box-shadow : none;
   }
 }
+
 
 #drone{
   animation-name: drone;
@@ -85,3 +125,243 @@
 .notvisible{
   visibility: hidden;
 }
+
+/*point*/
+.border {
+  &-reviews {
+    animation-name: borderLightUp;
+    animation-duration: 4s;
+    animation-iteration-count: unset;
+    animation-timing-function: ease-in;
+    animation-delay:0s;
+  }
+}
+
+
+/*wave animation */
+
+.wave{
+  height: 100px;
+  width: 100%;
+  opacity: 0.5;
+  background-image: url('../img/animation/wave.png');
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: animation 10s linear infinite;
+  animation-delay: 0s;
+}
+@keyframes animation {
+
+  100% {
+    background-position: 600px 0px;
+  }
+}
+
+@keyframes rotation {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.boat{
+  position: relative;
+  > img{
+    position: absolute;
+    top: -78px;
+    animation: rotation 2s ease-in-out infinite;
+    animation-delay: 0s;
+
+
+  }
+}
+
+.kist{
+  > img{
+    height: 100px;
+  }
+}
+
+
+@keyframes bubbelsFly{
+  0%{
+    transform: translateY(0) translateX(0px);
+  }
+  25%{
+
+    transform: translateY(-25vh) translateX(-5 vw);
+  }
+  50%{
+    transform: translateY(-50vh) translateX(-10vw);
+  }
+  100%{
+    transform: translateY(-100vh) translateX(5vw);
+    opacity: 0;
+
+  }
+}
+
+
+.bubbels {
+
+  position: relative;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  > div{
+    position: absolute;
+    bottom: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: #0889ff;
+    border-radius: 50%;
+    border: 2px solid #8ec9ff;
+    opacity:0.5;
+    animation: bubbelsFly 8s infinite linear;
+    &:nth-child(1){
+      width: 20px;
+      height: 20px;
+      left:10%;
+      animation-duration:10s;
+      animation-delay: 2s;
+    }
+    &:nth-child(2){
+      width: 40px;
+      height: 40px;
+      left:20%;
+      animation-duration:4s ;
+      animation-delay: 2s;
+    }
+    &:nth-child(3){
+      width: 40px;
+      height: 40px;
+      left:-10%;
+      animation-duration:4s ;
+      animation-delay: 2s;
+    }
+    &:nth-child(4){
+      width: 10px;
+      height: 10px;
+      left:-20%;
+      animation-duration:8s ;
+    }
+    &:nth-child(5){
+      width: 30px;
+      height: 30px;
+      left:0;
+      animation-duration:4s ;
+      animation-delay: 1s;
+    }
+    &:nth-child(6){
+      width: 45px;
+      height: 45px;
+      left:0;
+      animation-duration:3s;
+      animation-delay: 2s;
+    }
+    &:nth-child(7){
+      width: 30px;
+      height: 30px;
+      left:0;
+      animation-duration:4s;
+    }
+    &:nth-child(8){
+      width: 15px;
+      height: 15px;
+      left:0;
+      animation-duration:7s ;
+      animation-delay: 1s;
+    }
+  }
+
+}
+
+
+/*vis */
+.vis{
+  position: relative;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  > img:nth-child(1){
+    position: absolute;
+    opacity:0.5;
+    animation: leftToRight 15s infinite linear;
+  }
+  > img:nth-child(2){
+    position: absolute;
+    opacity:0.5;
+    animation: RightToLeft 15s infinite linear;
+  }
+}
+
+
+@keyframes leftToRight{
+  0%{
+    transform: translateY(-40vh) translateX(0);
+  }
+  100%{
+    transform: translateY(-50vh) translateX(95vw);
+
+  }
+}
+
+@keyframes RightToLeft{
+  0%{
+    transform: translateY(-120vh) translateX(95vw) rotate(-50deg);
+  }
+  50%{
+    transform: translateY(-100vh) translateX(50vw) rotate(-20deg);
+  }
+  100%{
+    transform: translateY(-120vh) translateX(0) rotate(10deg);
+
+  }
+}
+
+.kist{
+  &-top{
+    position: relative;
+    top: 100px;
+  }
+
+  &-geocach{
+    position: relative;
+    top: 15px;
+    visibility: hidden;
+  }
+  &-text{
+    position: relative;
+    top: 118px;
+    font-size: 2em;
+    animation: fadeInOut 2s infinite ease-in-out;
+  }
+
+  :hover {
+    .kist-top{
+      top: 30px;
+    }
+    .kist-geocach{
+      visibility: visible;
+    }
+
+  }
+
+
+}
+
+
+
+
+

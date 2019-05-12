@@ -166,7 +166,7 @@
   {
     "Id":12,
     "Name": "Parachute",
-    "Description": "",
+    "Description": "Met je parachute de lucht in. <br> 1) Ga op zoek naar jou startpunt. <br> 2) vlieg naar de opgegeven coördinaten. <br> 3) Vind je geocach. <br> Voor meer info gaan na extreem geocaching. ",
     "Date":{
       "Insert":"12/09/2018",
       "LastVisited":"maart 10, 2018"
@@ -183,12 +183,28 @@
         }
       ]
     },
-    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
+    "Needs": ["Parachute","helm","GPS toestel"],
     "Location":{
-      "Latitude":"51.151000",
-      "Longitude":"5.068533",
+      "Description": "Land en ga op zoek naar jou geocach.",
+      "Latitude":"51.167549",
+      "Longitude":"5.076971",
       "Altitude":"0",
-      "Stad": "Meerhout"
+      "Stad": "Geel",
+      "Startpunt":{
+        "Description": "Ga naar een dichtstbijzijnde luchthaven. <br> Suggesties: Vliegveld Weelde, vliegveld keiheuvel, Vliegveld Hechtel-Eksel.",
+        "Latitude":"51.1825675",
+        "Longitude":"5.2125159",
+        "Altitude":"0",
+        "Stad": "vliegveld keiheuvel (Balen)"
+      },
+      "MiddenPunt":{
+        "Description": "Vraag aan de piloot om hier uit het vliegtuig te springen.",
+        "Latitude":"51.164347",
+        "Longitude":"5.085588",
+        "Altitude":"0",
+        "Stad": "Geel"
+      }
+
     },
     "visitors": 200
 

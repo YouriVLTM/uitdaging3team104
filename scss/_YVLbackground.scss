@@ -26,4 +26,28 @@
   &-test{
     @include fullBackgroundImg('https://images.unsplash.com/photo-1509725525985-dae687277f7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80',cover,35vh);
   }
+  &-bodem{
+    @include fullBackgroundImg('../img/animation/bodem.jpg',fixed,100vh);
+
+  }
+}
+
+/*color */
+.background-color-sea{
+  &-begin{
+
+    background: rgb(148,184,218);
+    background: linear-gradient(180deg, rgba(148,184,218,1) 23%, rgba(19,71,122,1) 93%);
+
+  }
+  &-middel{
+
+    background: rgb(19,71,122);
+    background: linear-gradient(180deg, rgba(19,71,122,1) 23%, rgba(2,34,66,1) 93%);
+  }
+  &-end{
+
+    background: rgb(2,34,66);
+    background: linear-gradient(180deg, rgba(2,34,66,1) 23%, rgba(0,7,13,1) 93%);
+  }
 }
