@@ -54,6 +54,20 @@
 
 }
 
+/*extreem*/
+.nav-extreem{
+  > li > a{
+    text-decoration: none;
+  }
+  > li > a:hover {
+    color: $primary_color !important;
+  }
+  > li > .active {
+    color: $primary_color !important;
+  }
+}
+
+
 
 /*color
 
