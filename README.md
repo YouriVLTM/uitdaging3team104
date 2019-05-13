@@ -12,6 +12,23 @@ GEOCACHING
 www.geocachingengo.be of .nl
 
 # Gebruik
+<h3>Kleurchema</h3>
+- primairy: #818338
+- secondary: #e8e8e87d
+
+<h3>Logo</h3>
+OK
+
+<h3>Font</h3>
+Google
+- Noto+Sans
+- ...
+
+
+<h3>Icon</h3>
+- Font Awesome
+
+<h3>Tools</h3>
 - YouriVLTM : Cards, Tooltips, navs
 - vranckxrobin : ...
 
