@@ -320,7 +320,45 @@
 
 
 
+<!-- Footer -->
+<footer class="page-footer font-small pt-4 bg-primary">
 
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+            <div class="col-md-4 mt-md-0 mt-3">
+                Geschreven door: Van Laer Youri
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-md-4 mt-md-0 mt-3 footer">
+
+                <!-- Content -->
+                <a href="https://school.yourivanlaer.be/skillstaak2/index.html" target="_blank" rel="noopener">Webbureau</a></br>
+                <a href="https://www.thomasmore.be/campussen/campus-geel" target="_blank" rel="noopener" >Thomas More</a>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        Geocachingengo
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 
 <script src="js/jquery.min.js"></script>
