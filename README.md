@@ -23,11 +23,12 @@ OK
 <h3>Font</h3>
 Google
 
-- Noto+Sans
-- ...
+- Noto Sans
+- Open Sans
 
 
 <h3>Icon</h3>
+
 - Font Awesome
 
 <h3>Tools</h3>

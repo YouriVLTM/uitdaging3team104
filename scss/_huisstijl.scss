@@ -1,12 +1,13 @@
 //letttertype 2 fonts
 @import "huisstijlMixin";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 //breakpoints!!
 
 //KLeuren ->thema ok!
 $theme-colors: (
-        "primary": #818338,
+        "primary":  #818338, //#6A6A2F,
         "secondary": #e8e8e87d,
         "light-grey":#000000b3,
         "water":#94B8DA
