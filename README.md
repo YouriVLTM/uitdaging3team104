@@ -13,6 +13,7 @@ www.geocachingengo.be of .nl
 
 # Gebruik
 <h3>Kleurchema</h3>
+
 - primairy: #818338
 - secondary: #e8e8e87d
 
@@ -21,6 +22,7 @@ OK
 
 <h3>Font</h3>
 Google
+
 - Noto+Sans
 - ...
 
@@ -29,6 +31,7 @@ Google
 - Font Awesome
 
 <h3>Tools</h3>
+
 - YouriVLTM : Cards, Tooltips, navs
 - vranckxrobin : ...
 
