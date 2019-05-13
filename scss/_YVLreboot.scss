@@ -2,7 +2,7 @@ body{
   font-family: $lettertype;
 }
 
-//function
+//function voor alle titels een ander lettertype
 @for $header from 1 through 6{
   h#{$header}{
     font-family: $lettertypeTitle;
@@ -16,5 +16,8 @@ body{
 .mt{
   &-7{
     margin-top:6rem;
+  }
+  &-nav{
+    margin-top: $navbar_height;
   }
 }

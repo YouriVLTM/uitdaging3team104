@@ -1,0 +1,146 @@
+@keyframes fadeInLeft{
+  from{
+    opacity: 0;
+    transform: translateX(-20%);
+    visibility: visible;
+
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    visibility: visible;
+
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+@keyframes fadeInOut{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes drone{
+  from{
+    transform: translateX(-150%) translateY(-80%);
+
+  }
+  to{
+    transform: translateX(0%) translateY(0%);
+  }
+}
+
+@keyframes wolk{
+  from{
+    transform: translateX(0%);
+
+  }
+  to{
+    transform: translateX(-150%);
+  }
+}
+
+
+@keyframes borderLightUp{
+  0%{
+    border-width: 0.2px;
+    border-style: solid;
+    border-color: #808338ab;
+    border-radius: .25rem;
+    box-shadow: 0 0 0 0.3rem rgba(128, 131, 56, 0.43);
+  }
+  25% {
+    border-width: 0.5px;
+
+  }
+  50% {
+    border-width: 1px;
+    box-shadow: 0 0 0 0.6rem rgba(128, 131, 56, 0.43);
+  }
+  75%{
+    border-width: 0.5px;
+    box-shadow: 0 0 0 0.3rem rgba(128, 131, 56, 0.43);
+  }
+  100%{
+    border: none;
+    box-shadow : none;
+  }
+}
+@keyframes animation {
+
+  100% {
+    background-position: 600px 0px;
+  }
+}
+
+@keyframes rotation {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bubbelsFly{
+  0%{
+    transform: translateY(0) translateX(0px);
+  }
+  25%{
+
+    transform: translateY(-25vh) translateX(-5 vw);
+  }
+  50%{
+    transform: translateY(-50vh) translateX(-10vw);
+  }
+  100%{
+    transform: translateY(-100vh) translateX(5vw);
+    opacity: 0;
+
+  }
+}
+@keyframes leftToRight{
+  0%{
+    transform: translateY(-40vh) translateX(0);
+  }
+  100%{
+    transform: translateY(-50vh) translateX(95vw);
+
+  }
+}
+
+@keyframes RightToLeft{
+  0%{
+    transform: translateY(-120vh) translateX(95vw) rotate(-50deg);
+  }
+  50%{
+    transform: translateY(-100vh) translateX(50vw) rotate(-20deg);
+  }
+  100%{
+    transform: translateY(-120vh) translateX(0) rotate(10deg);
+
+  }
+}

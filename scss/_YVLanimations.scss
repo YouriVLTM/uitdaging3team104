@@ -1,125 +1,21 @@
-@keyframes fadeInLeft{
-  from{
-    opacity: 0;
-    transform: translateX(-20%);
-    visibility: visible;
+@import "YVLkeyframes";
 
-  }
+//default animation value
+$aantalBubbels: 8;
 
-  to{
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
-
-@keyframes fadeIn{
-  from{
-    opacity: 0;
-    visibility: visible;
-
-  }
-
-  to{
-    opacity: 1;
-  }
-}
-@keyframes fadeInOut{
-  0%{
-    opacity: 1;
-  }
-  50%{
-    opacity: 0;
-  }
-
-  100%{
-    opacity: 1;
-  }
-}
-
-@keyframes drone{
-  from{
-    transform: translateX(-150%) translateY(-80%);
-
-  }
-  to{
-    transform: translateX(0%) translateY(0%);
-  }
-}
-
-@keyframes wolk{
-   from{
-     transform: translateX(0%);
-
-   }
-   to{
-     transform: translateX(-150%);
-   }
- }
-
-
-@keyframes borderLightUp{
-  0%{
-    border-width: 0.2px;
-    border-style: solid;
-    border-color: #808338ab;
-    border-radius: .25rem;
-    box-shadow: 0 0 0 0.3rem rgba(128, 131, 56, 0.43);
-  }
-  25% {
-    border-width: 0.5px;
-
-  }
-  50% {
-    border-width: 1px;
-    box-shadow: 0 0 0 0.6rem rgba(128, 131, 56, 0.43);
-  }
-  75%{
-    border-width: 0.5px;
-    box-shadow: 0 0 0 0.3rem rgba(128, 131, 56, 0.43);
-  }
-  100%{
-    border: none;
-    box-shadow : none;
-  }
-}
-
-
-#drone{
-  animation-name: drone;
-  animation-duration: 2s;
-  animation-iteration-count: unset;
-  animation-timing-function: ease-out;
-  animation-delay:0s;
-}
-#wolk{
-  animation-name: wolk;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-delay:0s;
-}
 
 .fade{
   &In{
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-iteration-count: unset;
-    animation-timing-function: ease-in;
-    animation-fill-mode: both;
-    animation-delay:0s;
-
+    @include animation(fadeIn,1s);
     &Left{
-      animation-name: fadeInLeft;
-      animation-duration: 0.5s;
-      animation-iteration-count: unset;
-      animation-timing-function: ease-in;
-      /* Animation delay problemen -> aangezien hij al in de keyframe springt en nog een delay van bv 3 sec heeft. Dus word hij visible
-      Deze functie zorgt ervoor dat hij pas na de delay in de keyframe terecht komt */
-      animation-fill-mode: both;
-      animation-delay:0s;
+      @include animation(fadeInLeft,0.5s,$timing-function:ease-in);
 
     }
   }
+}
+
+#drone{
+  @include animation(drone);
 }
 
 .notvisible{
@@ -129,17 +25,14 @@
 /*point*/
 .border {
   &-reviews {
-    animation-name: borderLightUp;
-    animation-duration: 4s;
-    animation-iteration-count: unset;
-    animation-timing-function: ease-in;
-    animation-delay:0s;
+    @include animation(borderLightUp,4s,$timing-function:ease-in);
   }
 }
 
 
-/*wave animation */
+/*extreem*/
 
+/*wave animation */
 .wave{
   height: 100px;
   width: 100%;
@@ -147,41 +40,14 @@
   background-image: url('../img/animation/wave.png');
   background-position: 0px 0px;
   background-repeat: repeat-x;
-  animation: animation 10s linear infinite;
-  animation-delay: 0s;
+  @include animation(animation,10s,infinite,linear);
 }
-@keyframes animation {
-
-  100% {
-    background-position: 600px 0px;
-  }
-}
-
-@keyframes rotation {
-  0%{
-    transform: rotate(0deg);
-  }
-
-  33% {
-    transform: rotate(5deg);
-  }
-  66% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 .boat{
   position: relative;
   > img{
     position: absolute;
     top: -78px;
-    animation: rotation 2s ease-in-out infinite;
-    animation-delay: 0s;
-
-
+    @include animation(rotation,2s,infinite,ease-in-out);
   }
 }
 
@@ -192,27 +58,8 @@
 }
 
 
-@keyframes bubbelsFly{
-  0%{
-    transform: translateY(0) translateX(0px);
-  }
-  25%{
-
-    transform: translateY(-25vh) translateX(-5 vw);
-  }
-  50%{
-    transform: translateY(-50vh) translateX(-10vw);
-  }
-  100%{
-    transform: translateY(-100vh) translateX(5vw);
-    opacity: 0;
-
-  }
-}
-
 
 .bubbels {
-
   position: relative;
   top: 0;
   left: 50%;
@@ -228,7 +75,20 @@
     border: 2px solid #8ec9ff;
     opacity:0.5;
     animation: bubbelsFly 8s infinite linear;
-    &:nth-child(1){
+
+
+
+    @for $i from 1 to $aantalBubbels {
+      &:nth-child(#{$i}) {
+        $rad:#{random(50)+5}px;
+        width:$rad;
+        height: $rad;
+        left:10%;
+        animation-duration:#{random(20)+4}s;
+        animation-delay: #{random(3)+1}s;
+      }
+    }
+    /*&:nth-child(1){
       width: 20px;
       height: 20px;
       left:10%;
@@ -281,11 +141,10 @@
       left:0;
       animation-duration:7s ;
       animation-delay: 1s;
-    }
+    }*/
   }
 
 }
-
 
 /*vis */
 .vis{
@@ -297,35 +156,12 @@
   > img:nth-child(1){
     position: absolute;
     opacity:0.5;
-    animation: leftToRight 15s infinite linear;
+    @include animation(leftToRight,15s,infinite,linear);
   }
   > img:nth-child(2){
     position: absolute;
     opacity:0.5;
-    animation: RightToLeft 15s infinite linear;
-  }
-}
-
-
-@keyframes leftToRight{
-  0%{
-    transform: translateY(-40vh) translateX(0);
-  }
-  100%{
-    transform: translateY(-50vh) translateX(95vw);
-
-  }
-}
-
-@keyframes RightToLeft{
-  0%{
-    transform: translateY(-120vh) translateX(95vw) rotate(-50deg);
-  }
-  50%{
-    transform: translateY(-100vh) translateX(50vw) rotate(-20deg);
-  }
-  100%{
-    transform: translateY(-120vh) translateX(0) rotate(10deg);
+    @include animation(RightToLeft,15s,infinite,linear);
 
   }
 }
@@ -334,26 +170,30 @@
   &-top{
     position: relative;
     top: 100px;
+    transition: top 2s ease-in-out;
   }
-
   &-geocach{
     position: relative;
     top: 15px;
     visibility: hidden;
+    opacity:0.0;
+    transition: opacity 1s ease-in-out;
+    transition-delay : 1s;
   }
   &-text{
     position: relative;
     top: 118px;
     font-size: 2em;
-    animation: fadeInOut 2s infinite ease-in-out;
-  }
+    @include animation(fadeInOut,2s,infinite,ease-in-out);
 
+  }
   :hover {
     .kist-top{
       top: 30px;
     }
     .kist-geocach{
       visibility: visible;
+      opacity: 1.0;
     }
 
   }

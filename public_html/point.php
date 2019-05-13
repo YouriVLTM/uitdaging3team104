@@ -23,41 +23,39 @@
     <meta name="theme-color" content="#818338">
 
 </head>
-<body class="background2-img">
+<body class="background-img-path2">
 
-<!--Nav-->
+<!-- nav -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="logo/logo.svg" alt="" style="height:50px">
+            <img src="logo/logo.svg" class="logo" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Benodigdheden</a>
+                    <a class="nav-link text-secondary" href="benodigdheden.html">Benodigdheden</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="overzicht.php">Overzicht</a>
+                    <a class="nav-link text-secondary" href="overzicht.php">Overzicht</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="extreem.html">extreem geocaching</a>
+                    <a class="nav-link text-secondary" href="extreem.html">extreem geocaching</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nieuws</a>
+                    <a class="nav-link text-secondary" href="nieuws.html">Nieuws</a>
                 </li>
 
             </ul>
         </div>
     </div>
 </nav>
-
-
 <!--END nav-->
 
 <?php if(isset($_GET["pointId"])): ?>

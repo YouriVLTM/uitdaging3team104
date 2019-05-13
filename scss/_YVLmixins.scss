@@ -1,0 +1,10 @@
+@mixin animation($name,$duration:2s,$iteration-count: unset,$timing-function:ease-out,$delay:0s){
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: $iteration-count;
+  animation-timing-function: $timing-function;
+  animation-delay:$delay;
+  /* Animation delay problemen -> aangezien hij al in de keyframe springt en nog een delay van bv 3 sec heeft. Dus word hij visible
+     Deze functie zorgt ervoor dat hij pas na de delay in de keyframe terecht komt */
+  animation-fill-mode: both;
+}

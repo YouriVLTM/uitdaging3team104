@@ -1,14 +1,10 @@
 /*Youri Van Laer*/
-@mixin fullBackgroundImg($imgPath,$attachment,$height){
+@mixin fullBackgroundImg($imgPath,$height: 400px,$attachment:inherit,$size:cover,$posistion:0px 0px,$repeat: no-repeat){
   background-image: url($imgPath);
-  background-attachment: $attachment;
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
   height: $height;
-  /*min-height: 500px;*/
+  background-attachment: $attachment;
+  background-size: $size;
+  background-position: $posistion;
+  background-repeat: $repeat;
 }
-
-
-
 /*Robin Vranxi*/

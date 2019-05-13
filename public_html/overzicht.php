@@ -40,45 +40,45 @@
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.js"></script>
 
 </head>
-<body class="background-img">
-<!--Nav-->
+<body class="background-img-path">
+<!-- nav -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="logo/logo.svg" alt="" style="height:50px">
+            <img src="logo/logo.svg" class="logo" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Benodigdheden</a>
+                    <a class="nav-link text-secondary" href="benodigdheden.html">Benodigdheden</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="overzicht.php">Overzicht</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="overzicht.php">Overzicht</a>
+                    <a class="nav-link text-secondary" href="extreem.html">extreem geocaching</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="extreem.html">extreem geocaching</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Nieuws</a>
+                    <a class="nav-link text-secondary" href="nieuws.html">Nieuws</a>
                 </li>
 
             </ul>
         </div>
     </div>
 </nav>
-
 <!--END nav-->
-<section class="background3-img mt-5">
+
+<section class="background-img-man-look mt-nav">
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <h1 class="vertical" style="color:white;margin-top:76px;margin-button:76px;">Vind al u geo plaatsen</h1>
+                <h1 class="vertical text-light search">Vind al u geo plaatsen</h1>
             </div>
         </div>
     </div>
@@ -115,9 +115,9 @@
             //var_dump($json_data);
 
             ?>
-            <?php foreach ($json_data as $point): ?>
+            <?php foreach ($json_data as $count => $point): ?>
                 <!-- blog item-->
-                <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="col-sm-6 col-lg-4  mb-4 scroll notvisible" data-animation="fadeIn" data-animation-delay="0.2s">
                     <div class="card shadow border-0 h-100"><img src="img<?php echo $point["PictureUrl"];?>" alt="..." class="img-fluid card-img-top">
                         <div class="card-body">
                             <div class="clearfix">
@@ -256,7 +256,7 @@ var gl = L.mapboxGL({
 }).addTo(map);
 
 </script>
-
+<script src="js/youriAnimatie.js"></script>
 
 </body>
 </html>
