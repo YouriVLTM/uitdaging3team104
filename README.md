@@ -1,12 +1,14 @@
-# 1ITF Sass-BS4-project
--vranckxrobin : Robin Vranckx 
-<br> 
--YouriVLTM : Youri Van Laer
+# 1ITF Sass-BS4-project (Eindproject)
+- vranckxrobin : Robin Vranckx 
+- YouriVLTM : Youri Van Laer
 
 # Onderwerp
 GEOCACHING
+- team : index
+- vranckrobin : benodigdheden, Nieuws
+- YouriVLTM : overzicht, extreem geocaching
 
-#Domein
+# Domein
 www.geocachingengo.be of .nl
 
 # Gebruik
