@@ -11,6 +11,19 @@
     transform: translateX(0%);
   }
 }
+@keyframes fadeInRight{
+  from{
+    opacity: 0;
+    transform: translateX(20%);
+    visibility: visible;
+
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
 
 @keyframes fadeIn{
   from{

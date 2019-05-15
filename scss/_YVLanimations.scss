@@ -3,13 +3,14 @@
 //default animation value
 $aantalBubbels: 15;
 
-
 .fade{
   &In{
     @include animation(fadeIn,1s);
     &Left{
       @include animation(fadeInLeft,0.5s,$timing-function:ease-in);
-
+    }
+    &Right{
+      @include animation(fadeInRight,0.5s,$timing-function:ease-in);
     }
   }
 }
