@@ -119,7 +119,7 @@
             <?php $delayValue = (string)($count%3*0.2);?>
                 <!-- blog item-->
                 <div class="col-sm-6 col-lg-4  mb-4 scroll notvisible" data-animation="fadeIn" data-animation-delay="<?php echo $delayValue;?>s">
-                    <div class="card shadow border-0 h-100"><img src="img<?php echo $point["PictureUrl"];?>" alt="..." class="img-fluid card-img-top">
+                    <div class="card shadow border-0 h-100"><img src="img<?php echo $point["PictureUrl"];?>" alt="<?php echo $point["PictureUrl"];?>" class="img-fluid card-img-top">
                         <div class="card-body">
                             <div class="clearfix">
                                 <div class="float-left">

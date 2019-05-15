@@ -95,12 +95,12 @@
 
                         <div class="row mt-3">
                             <div class="col-sm-12 col-md-4 ">
-                                <img class="rounded img-fluid" src="img/<?php echo $point["PictureUrl"];?>" alt="">
+                                <img class="rounded img-fluid" src="img/<?php echo $point["PictureUrl"];?>" alt="<?php echo $point["PictureUrl"];?>">
                             </div>
                             <div class="col-sm-12 col-md-8 ">
                                 <div class="d-flex flex-row bd-highlight mb-3 align-items-center">
                                     <div class="p-2 bd-highlight">
-                                        <img src="img/pot.png" alt="" style="height:50px">
+                                        <img src="img/pot.png" alt="geocach pot" style="height:50px">
                                     </div>
                                     <div class="p-2 bd-highlight">
                                         <h2><?php echo $point["Name"]; ?> </h2>
