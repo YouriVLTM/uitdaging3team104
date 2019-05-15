@@ -58,11 +58,11 @@
                 <li class="nav-item">
                     <a class="nav-link text-secondary" href="benodigdheden.html">Benodigdheden</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-secondary" href="overzicht.php">Overzicht</a>
-                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="extreem.html">extreem geocaching</a>
+                    <a class="nav-link" href="overzicht.php">Overzicht</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-secondary" href="extreem.html">extreem geocaching</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-secondary" href="nieuws.html">Nieuws</a>
