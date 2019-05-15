@@ -111,10 +111,10 @@
   }
   25%{
 
-    transform: translateY(-25vh) translateX(-5 vw);
+    transform: translateY(-25vh) translateX(0vw);
   }
   50%{
-    transform: translateY(-50vh) translateX(-10vw);
+    transform: translateY(-50vh) translateX(0vw);
   }
   100%{
     transform: translateY(-100vh) translateX(5vw);
