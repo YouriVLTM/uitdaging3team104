@@ -11,7 +11,7 @@
     "Quality":{
       "Difficult" : "2",
       "Size": "5",
-      "Categorie":"easy",
+      "Categorie":"Easy",
       "Reachability":[
         {
           "Name": "Auto",
@@ -62,14 +62,14 @@
     "Description": "Deze cache maakt deel uit van het event",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 2, 2018"
+      "LastVisited":"Maart 2, 2018"
     },
     "Hint": "",
     "PictureUrl":"/overzicht/9.JPG",
     "Quality":{
       "Difficult" : "1.5",
       "Size": "3",
-      "Categorie":"easy",
+      "Categorie":"Easy",
       "Reachability":[
         {
           "Name": "Auto",
@@ -92,11 +92,11 @@
   },
   {
     "Id":15,
-    "Name": "Quat",
+    "Name": "Quad",
     "Description": "",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 10, 2018"
+      "LastVisited":"Maart 10, 2018"
     },
     "PictureUrl":"/overzicht/quat.jpg",
     "Quality":{
@@ -126,14 +126,14 @@
     "Description": "Deze ligt op de Hoevendijk.",
     "Date":{
       "Insert":"14/04/2015",
-      "LastVisited":"maart 14, 2019"
+      "LastVisited":"Maart 14, 2019"
     },
     "Hint": "",
     "PictureUrl":"/overzicht/1.JPG",
     "Quality":{
       "Difficult" : "2.5",
       "Size": "2",
-      "Categorie":"easy",
+      "Categorie":"Easy",
       "Reachability":[
         {
           "Name": "Auto",
@@ -169,7 +169,7 @@
     "Description": "Met je parachute de lucht in. <br> 1) Ga op zoek naar jou startpunt. <br> 2) vlieg naar de opgegeven coördinaten. <br> 3) Vind je geocach. <br> Voor meer info gaan na extreem geocaching. ",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 10, 2018"
+      "LastVisited":"Maart 10, 2018"
     },
     "PictureUrl":"/overzicht/parachute.jpg",
     "Quality":{
@@ -215,14 +215,14 @@
     "Description": "Ook deze ligt op de Hoevendijk. <br> Om deze te kunnen loggen moet je over een beek springen, niet alle caches moeten gelogd worden!",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 18, 2019"
+      "LastVisited":"Maart 18, 2019"
     },
     "Hint": "Blijf voor de beek...",
     "PictureUrl":"/overzicht/2.JPG",
     "Quality":{
       "Difficult" : "1.5",
       "Size": "1",
-      "Categorie":"easy",
+      "Categorie":"Easy",
       "Reachability":[
         {
           "Name": "Auto",
@@ -258,7 +258,7 @@
     "Description": "",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 10, 2018"
+      "LastVisited":"Maart 10, 2018"
     },
     "PictureUrl":"/overzicht/kano.jpg",
     "Quality":{
@@ -288,13 +288,13 @@
     "Description": "Deze ligt ook op de Hoevendijk.<br> MAGNEET IS NODIG OM TE KUNNEN LOGGEN <br> Gelieve niets stuk te maken en geen zand in de buis te doen.",
     "Date":{
       "Insert":"14/04/2015",
-      "LastVisited":"maart 15, 2019"
+      "LastVisited":"Maart 15, 2019"
     },
     "PictureUrl":"/overzicht/3.JPG",
     "Quality":{
       "Difficult" : "2",
       "Size": "2",
-      "Categorie":"easy",
+      "Categorie":"Easy",
       "Reachability":[
         {
           "Name": "Auto",
@@ -330,14 +330,14 @@
     "Description": "Meer info over de reeks vind je bij de bonus van de reeks.",
     "Date":{
       "Insert":"12/09/2015",
-      "LastVisited":"maart 10, 2018"
+      "LastVisited":"Maart 10, 2018"
     },
     "Hint": "Magnetisch...",
     "PictureUrl":"/overzicht/4.JPG",
     "Quality":{
       "Difficult" : "2",
       "Size": "1",
-      "Categorie":"easy",
+      "Categorie":"Easy",
       "Reachability":[
         {
           "Name": "Auto",
@@ -373,13 +373,13 @@
     "Description": "Deze ligt op de Hoevendijk, een beetje oppassen voor oude prikkeldraad. <br> Meer info over de reeks vind je bij de bonus van de reeks.",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 2, 2018"
+      "LastVisited":"Maart 2, 2018"
     },
     "PictureUrl":"/overzicht/5.JPG",
     "Quality":{
       "Difficult" : "1.5",
       "Size": "1",
-      "Categorie":"easy",
+      "Categorie":"Easy",
       "Reachability":[
         {
           "Name": "Auto",
@@ -422,7 +422,7 @@
     "Quality":{
       "Difficult" : "2",
       "Size": "1",
-      "Categorie":"easy",
+      "Categorie":"Easy",
       "Reachability":[
         {
           "Name": "Auto",
@@ -458,13 +458,13 @@
     "Description": "Deze ligt op de Hoevendijk aan de Zeeploop, na het loggen kan je links het kleine paadje ingaan op naar nr. 11 (en 'eenzame boom').",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 9, 2019"
+      "LastVisited":"Maart 9, 2019"
     },
     "PictureUrl":"/overzicht/8.JPG",
     "Quality":{
       "Difficult" : "2",
       "Size": "6",
-      "Categorie":"easy",
+      "Categorie":"Easy",
       "Reachability":[
         {
           "Name": "Auto",
@@ -500,7 +500,7 @@
     "Description": "",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 10, 2018"
+      "LastVisited":"Maart 10, 2018"
     },
     "PictureUrl":"/overzicht/ski.jpg",
     "Quality":{
@@ -530,13 +530,13 @@
     "Description": "De Jutteput is de naam van een verdoken grenspaal; die de grens vormt tussen Geel, Meerhout en Mol.\n1519 : eerste verslag van de plaatsing van deze paal op een perkament van 5 meter lang en 65 cm breed....\nHij staat er nog en geeft een historisch punt aan in de begrenzing van Mol en Geel.\n\nHij is gelegen aan de Zeeploop of de Geeploop.\nEigenaardig aan deze loop/beek is dat hij diep in het landschap snijdt. Als je hem richting Mol zou volgen lijkt het wel een Ardeense beek. Op enkele plaatsen loopt hij drie meter onder het niveau van de oever.\nJuist : hij is gegraven. Als afwatering van de Duivelskuil en het Volmolengoor, iets verder richting Mol. Hoewel een afwatering richting Meerhout iets eenvoudiger zou geweest zijn heeft men toch gekozen voor Geel. Wat was hier de oorsprong van ?",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 7, 2019"
+      "LastVisited":"Maart 7, 2019"
     },
     "PictureUrl":"/overzicht/10.JPG",
     "Quality":{
       "Difficult" : "5",
       "Size": "1",
-      "Categorie":"easy",
+      "Categorie":"Easy",
       "Reachability":[
         {
           "Name": "te voet",
@@ -568,13 +568,13 @@
     "Description": "Bij deze geocache berijk je een eenzame boom die het midden van een kruispunt vormt. Eens je hier bent kan je naar de cache gaan zoeken!",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 10, 2018"
+      "LastVisited":"Maart 10, 2018"
     },
     "PictureUrl":"/overzicht/11.JPG",
     "Quality":{
       "Difficult" : "1.5",
       "Size": "3",
-      "Categorie":"easy",
+      "Categorie":"Easy",
       "Reachability":[
         {
           "Name": "te voet",
@@ -598,7 +598,7 @@
     "Description": "",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 10, 2018"
+      "LastVisited":"Maart 10, 2018"
     },
     "PictureUrl":"/overzicht/bicycle.png",
     "Quality":{
@@ -628,7 +628,7 @@
     "Description": "",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 10, 2018"
+      "LastVisited":"Maart 10, 2018"
     },
     "PictureUrl":"/overzicht/drone.png",
     "Quality":{
@@ -658,7 +658,7 @@
     "Description": "",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 10, 2018"
+      "LastVisited":"Maart 10, 2018"
     },
     "PictureUrl":"/overzicht/wallClimbing.jpg",
     "Quality":{
@@ -688,7 +688,7 @@
     "Description": "",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 10, 2018"
+      "LastVisited":"Maart 10, 2018"
     },
     "PictureUrl":"/overzicht/tandem.jpg",
     "Quality":{
@@ -718,7 +718,7 @@
     "Description": "",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"maart 10, 2018"
+      "LastVisited":"Maart 10, 2018"
     },
     "PictureUrl":"/overzicht/dive.jpg",
     "Quality":{

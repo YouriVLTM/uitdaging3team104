@@ -78,7 +78,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <h1 class="vertical text-light search">Vind al u geo plaatsen</h1>
+                <h1 class="vertical text-light search">Vind uw geocachers</h1>
             </div>
         </div>
     </div>
@@ -95,7 +95,7 @@
 
         <div class="row mt-5 mb-5">
             <div class="col">
-                <h1>Overzicht:</h1>
+                <h1>Overzicht</h1>
             </div>
         </div>
 
@@ -150,7 +150,7 @@
                                 </div>
                             </div>
 
-                            <?php if($point["Quality"]["Categorie"] == "easy"): ?>
+                            <?php if($point["Quality"]["Categorie"] == "Easy"): ?>
                             <p>Categorie : <span class="badge badge-pill badge-success"><?php echo $point["Quality"]["Categorie"];?></span></p>
                             <?php else: ?>
                             <p>Categorie : <span class="badge badge-pill badge-danger"><?php echo $point["Quality"]["Categorie"];?></span></p>
@@ -165,7 +165,7 @@
                             </p>
 
 
-                            <p class="my-2 text-muted text-sm"><?php echo substr($point["Description"],0,40) . "<br>" . "..."; ?></p>
+                            <p class="my-2 text-muted text-sm"><?php echo substr($point["Description"],0,40); ?></p>
                             <a href="<?php echo 'point.php?pointId=' . $point["Id"]; ?>"  class="btn btn-link pl-0">Lees meer<i class="fa fa-long-arrow-alt-right ml-2"></i></a>
 
                         </div>
