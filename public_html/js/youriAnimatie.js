@@ -1,4 +1,4 @@
-
+//global functions
 //Functie
 function isVisible( row, container ){
     elementTop = $(row).offset().top;
@@ -7,22 +7,18 @@ function isVisible( row, container ){
     containerHeight = container.height();
     return ((((elementTop - containerTop) + elementHeight) > 0) && ((elementTop - containerTop) < containerHeight));
 }
-
-$(window).on('scroll', function (e) {
+function Animate(window){
     $('.scroll').each(function(){
-        console.log($(this));
+        //console.log($(this));
         if(isVisible($(this), $(window))){
 
             // kijken maar 1 keer worden uitgevoerd
             if(!$(this).hasClass('visible')){
                 // bekijk de data van animation welke animatie moet worden uitgevoerd!
                 animationAttr = $(this).attr('data-animation');
-                //animationAttr = $(this).data( "animation" );
                 animationDelay = $(this).attr( "data-animation-delay" );
-                //animationDelay = $(this).data( "animation-delay" );
-
                 $(this).css('animation-delay',animationDelay);
-                // die class implementeren
+                // De class implementeren
                 $(this).toggleClass(animationAttr);
                 // deze klasse visible maken
                 // $(this).removeClass('notvisible');
@@ -32,6 +28,11 @@ $(window).on('scroll', function (e) {
 
         };
     });
+}
+$(window).ready(function () {
+    Animate(window);
+})
 
-
+$(window).on('scroll', function (e) {
+    Animate(window);
 });
