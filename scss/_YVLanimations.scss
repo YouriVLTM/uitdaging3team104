@@ -1,7 +1,5 @@
 @import "YVLkeyframes";
 
-//default animation value
-$aantalBubbels: 15;
 
 .fade{
   &In{
@@ -51,6 +49,25 @@ $aantalBubbels: 15;
     @include animation(rotation,2s,infinite,ease-in-out);
   }
 }
+.dive{
+  position: relative;
+  > img{
+    position: absolute;
+    top: 100px;
+    left: -20px;
+    overflow:hidden;
+    @include animation(dive,20s,infinite,ease-in-out);
+  }
+}
+.buoy{
+  position: relative;
+  > img{
+    position: absolute;
+    left: 80%;
+    top: -177px;
+    @include animation(rotation,3s,infinite,ease-in-out);
+  }
+}
 
 .kist{
   > img{
@@ -62,7 +79,7 @@ $aantalBubbels: 15;
 
 .bubbels {
   position: relative;
-  top: 0;
+  top: 100px;
   left: 50%;
   width: 100%;
   height: 100%;
@@ -71,9 +88,9 @@ $aantalBubbels: 15;
     bottom: 0px;
     width: 40px;
     height: 40px;
-    background-color: #0889ff;
+    background-color: darken($color-water,20%);//#0889ff;
     border-radius: 50%;
-    border: 2px solid #8ec9ff;
+    border: 2px solid lighten($color-water,50%);//#8ec9ff;
     opacity:0.5;
     animation: bubbelsFly 8s infinite linear;
 
@@ -162,6 +179,7 @@ $aantalBubbels: 15;
   > img:nth-child(2){
     position: absolute;
     opacity:0.5;
+    overflow:hidden;
     @include animation(RightToLeft,15s,infinite,linear);
 
   }
@@ -183,9 +201,15 @@ $aantalBubbels: 15;
   }
   &-text{
     position: relative;
-    top: 118px;
-    font-size: 2em;
+    top: 100px;
+    font-size: 1em;
     @include animation(fadeInOut,2s,infinite,ease-in-out);
+    > img{
+      width: 100px;
+    }
+    > p{
+      margin:0;
+    }
 
   }
   :hover {

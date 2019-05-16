@@ -59,9 +59,6 @@
 
 <!-- Full Page Image Header with Vertically Centered Content -->
 
-
-
-
 <section class="mt-5 bg-secondary">
 
     <!--<div class="container pt-5">
@@ -118,19 +115,19 @@
                         </a>
                     </li>
                     <li class="nav-item text-center pl-3">
-                        <a class="text-light-grey" id="pills-tandem-tab" data-toggle="pill" href="#pills-tandem" role="tab" aria-controls="pills-tandem" aria-selected="false">
-                            <img class="img-fluid" src="img/extreem/nav/tandem.png" alt="tandem" >
-
-                            <br>
-                            <span>Tandem</span>
-                        </a>
-                    </li>
-                    <li class="nav-item text-center pl-3">
                         <a class="text-light-grey" id="pills-kano-tab" data-toggle="pill" href="#pills-kano" role="tab" aria-controls="pills-kano" aria-selected="false">
                             <img class="img-fluid" src="img/extreem/nav/kano.png" >
 
                             <br>
                             <span>Kano</span>
+                        </a>
+                    </li>
+                    <li class="nav-item text-center pl-3">
+                        <a class="text-light-grey" id="pills-tandem-tab" data-toggle="pill" href="#pills-tandem" role="tab" aria-controls="pills-tandem" aria-selected="false">
+                            <img class="img-fluid" src="img/extreem/nav/tandem.png" alt="tandem" >
+
+                            <br>
+                            <span>Tandem</span>
                         </a>
                     </li>
                 </ul>
@@ -141,7 +138,7 @@
 
 
 
-<div class="tab-content" id="pills-tabContent">
+<div class="tab-content overflow-hidden" id="pills-tabContent">
     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
         <section class="">
@@ -232,16 +229,20 @@
                         <p>Hou je het liever wat mysterieuzer? Ga dan zeker op zoek naar jouw geocach tussen de vissen. </p>
                         <a href="point.php?pointId=19" class="btn btn-outline-primary">Praktische informatie</a>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-5">
-                        <img class="img-fluid rounded h-300px" src="img/extreem/dive.jpg" alt="dive">
-                    </div>
+
                 </div>
             </div>
         </section>
 
         <section class="mt-5">
-            <div class="boat">
+            <!--<div class="boat">
                 <img src="img/animation/boat.png" alt="boot">
+            </div>-->
+            <div class="dive">
+                <img src="img/animation/dive.png" alt="duiker">
+            </div>
+            <div class="buoy">
+                <img src="img/animation/buoy.png" alt="boei">
             </div>
 
             <div class="wave"></div>
@@ -285,10 +286,7 @@
                 <hr>
 
                 <div class="row">
-                    <div class="order-12 col-sm-12 col-md-5 order-md-1 col-lg-4">
-                        <img class="img-fluid rounded h-200px" src="img/extreem/bag.png" alt="rugzak">
-                    </div>
-                    <div class="order-1 col-sm-12 col-md-7 order-md-12 col-lg-8 mb-3">
+                    <div class="col-sm-12 col-md-5 col-lg-4">
                         <h4>Voorbereiding</h4>
                         <p>Wilt u meer te weten komen wat u nodig heeft?  </p>
                         <a href="point.php?pointId=19#benodichtheden" class="btn btn-outline-primary">Meer informatie</a>
@@ -335,7 +333,8 @@
 
                             <div class="d-flex flex-column ">
                                 <div class="kist-text">
-                                    <p class="text-white">,zoek de s*at</p>
+                                    <img src="img/animation/key.png" alt="kist">
+                                    <p class="text-white">Hover</p>
                                 </div>
                                 <div class="kist-top">
                                     <img src="img/animation/kistTop.png" alt="kist">
@@ -704,6 +703,94 @@
 
 
     </div>
+    <div class="tab-pane fade" id="pills-kano" role="tabpanel" aria-labelledby="pills-kano-tab">
+
+        <section class="">
+            <div class="container pt-5 pb-2">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-8 text-center">
+                        <h1 class="display-4 font-weight-bold">Geniet van het uitzicht met uw Kano.</h1>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="">
+
+            <div class="container pt-5 pb-5">
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-5">
+                        <img class="img-fluid rounded h-300px" src="img/extreem/kanoWater.jpg" alt="kano in water">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-7 mb-3">
+                        <h2>Interesse</h2>
+                        <hr>
+                        <p>Ben je een ochtendmens en hou je liever van rust en stilte? Kom maar snel een kijkje nemen met je kano. </p>
+                        <a href="point.php?pointId=17" class="btn btn-outline-primary">Meer informatie</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="bg-secondary">
+            <div class="container pb-5 pt-5">
+                <h3>Concept</h3>
+                <hr>
+
+                <div class="row justify-content-around">
+                    <div class="col-12 col-md-6 text-center mt-3 scroll notvisible pr-5 pl-5" data-animation="fadeIn" data-animation-delay="0s">
+                        <h4 class="pb-1 font-weight-bold">1. Startpunt</h4>
+                        <p class="text-light-grey">Ga op zoek naar uw startpunten in de buurt. <br>Voor meer praktische informatie <a href="point.php?pointId=17#locatie"  class="btn btn-link p-0">klik hier</a>. </p>
+
+                        <img class="img-fluid rounded-circle border border-primary" src="img/extreem/maps.jpg" alt="kaart">
+                    </div>
+                    <div class="col-12 col-md-6 text-center mt-3 scroll notvisible pr-5 pl-5" data-animation="fadeIn" data-animation-delay="0.3s">
+                        <h4 class="pb-1 font-weight-bold">2. Route</h4>
+                        <p>Volg de aangegeven route. </p>
+                        <img class="img-fluid rounded-circle border border-primary" src="img/extreem/kanoRoute.jpg" alt="kano in het water">
+                    </div>
+                    <div class="col-12 col-md-6 text-center mt-4 scroll notvisible pr-5 pl-5" data-animation="fadeIn" data-animation-delay="0.6s">
+                        <h4 class="pb-1 font-weight-bold">3. Zoek</h4>
+                        <p class="text-light-grey">Zoek naar de geocach voorwerpen.</p>
+                        <img class="img-fluid rounded-circle border border-primary" src="img/extreem/box.jpg" alt="geocache box">
+                    </div>
+                    <div class="col-12 col-md-6 text-center mt-4 scroll notvisible pr-5 pl-5" data-animation="fadeIn" data-animation-delay="0.6s">
+                        <h4 class="pb-1 font-weight-bold">4. Deel</h4>
+                        <p class="text-light-grey">Na het vinden van de geocach, <br>deel <a href="point.php?pointId=17#reviews"  class="btn btn-link p-0">hier</a> je prachtige ervaring.  </p>
+
+                        <img class="img-fluid rounded-circle border border-primary" src="img/extreem/kanoSearch.jpg" alt="kano in het water">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container pb-5 pt-5">
+                <h3>Benodigdheden</h3>
+                <hr>
+
+                <div class="row">
+                    <div class="order-12 col-sm-12 col-md-5 order-md-1 col-lg-4">
+                        <img class="img-fluid rounded h-200px" src="img/extreem/bag.png" alt="rugzak">
+                    </div>
+                    <div class="order-1 col-sm-12 col-md-7 order-md-12 col-lg-8 mb-3">
+                        <h4>Voorbereiding</h4>
+                        <p>Wilt u meer te weten komen wat u nodig heeft?  </p>
+                        <a href="point.php?pointId=17#benodichtheden" class="btn btn-outline-primary">Meer informatie</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
     <div class="tab-pane fade" id="pills-tandem" role="tabpanel" aria-labelledby="pills-tandem-tab">
 
 
@@ -833,94 +920,7 @@
 
 
     </div>
-    <div class="tab-pane fade" id="pills-kano" role="tabpanel" aria-labelledby="pills-kano-tab">
 
-        <section class="">
-            <div class="container pt-5 pb-2">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-8 text-center">
-                        <h1 class="display-4 font-weight-bold">Geniet van het uitzicht met uw Kano.</h1>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="">
-
-            <div class="container pt-5 pb-5">
-
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-5">
-                        <img class="img-fluid rounded h-300px" src="img/extreem/kanoWater.jpg" alt="kano in water">
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-7 mb-3">
-                        <h2>Interesse</h2>
-                        <hr>
-                        <p>Ben je een ochtendmens en hou je liever van rust en stilte? Kom maar snel een kijkje nemen met je kano. </p>
-                        <a href="point.php?pointId=17" class="btn btn-outline-primary">Meer informatie</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section class="bg-secondary">
-            <div class="container pb-5 pt-5">
-                <h3>Concept</h3>
-                <hr>
-
-                <div class="row justify-content-around">
-                    <div class="col-12 col-md-6 text-center mt-3 scroll notvisible pr-5 pl-5" data-animation="fadeIn" data-animation-delay="0s">
-                        <h4 class="pb-1 font-weight-bold">1. Startpunt</h4>
-                        <p class="text-light-grey">Ga op zoek naar uw startpunten in de buurt. <br>Voor meer praktische informatie <a href="point.php?pointId=17#locatie"  class="btn btn-link p-0">klik hier</a>. </p>
-
-                        <img class="img-fluid rounded-circle border border-primary" src="img/extreem/maps.jpg" alt="kaart">
-                    </div>
-                    <div class="col-12 col-md-6 text-center mt-3 scroll notvisible pr-5 pl-5" data-animation="fadeIn" data-animation-delay="0.3s">
-                        <h4 class="pb-1 font-weight-bold">2. Route</h4>
-                        <p>Volg de aangegeven route. </p>
-                        <img class="img-fluid rounded-circle border border-primary" src="img/extreem/kanoRoute.jpg" alt="kano in het water">
-                    </div>
-                    <div class="col-12 col-md-6 text-center mt-4 scroll notvisible pr-5 pl-5" data-animation="fadeIn" data-animation-delay="0.6s">
-                        <h4 class="pb-1 font-weight-bold">3. Zoek</h4>
-                        <p class="text-light-grey">Zoek naar de geocach voorwerpen.</p>
-                        <img class="img-fluid rounded-circle border border-primary" src="img/extreem/box.jpg" alt="geocache box">
-                    </div>
-                    <div class="col-12 col-md-6 text-center mt-4 scroll notvisible pr-5 pl-5" data-animation="fadeIn" data-animation-delay="0.6s">
-                        <h4 class="pb-1 font-weight-bold">4. Deel</h4>
-                        <p class="text-light-grey">Na het vinden van de geocach, <br>deel <a href="point.php?pointId=17#reviews"  class="btn btn-link p-0">hier</a> je prachtige ervaring.  </p>
-
-                        <img class="img-fluid rounded-circle border border-primary" src="img/extreem/kanoSearch.jpg" alt="kano in het water">
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="">
-            <div class="container pb-5 pt-5">
-                <h3>Benodigdheden</h3>
-                <hr>
-
-                <div class="row">
-                    <div class="order-12 col-sm-12 col-md-5 order-md-1 col-lg-4">
-                        <img class="img-fluid rounded h-200px" src="img/extreem/bag.png" alt="rugzak">
-                    </div>
-                    <div class="order-1 col-sm-12 col-md-7 order-md-12 col-lg-8 mb-3">
-                        <h4>Voorbereiding</h4>
-                        <p>Wilt u meer te weten komen wat u nodig heeft?  </p>
-                        <a href="point.php?pointId=17#benodichtheden" class="btn btn-outline-primary">Meer informatie</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-    </div>
 </div>
 
 

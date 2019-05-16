@@ -1,0 +1,15 @@
+@include media-breakpoint-down(sm) {
+  .bubbels{
+    display: none;
+  }
+  .dive{
+    display:none;
+  }
+  .buoy{
+    > img{
+      left:65%;
+    }
+
+
+  }
+}

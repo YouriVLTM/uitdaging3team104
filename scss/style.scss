@@ -1,13 +1,22 @@
 //Huistijl importeren
 @import "huisstijl";
+@import "YVLvariables";
 @import "YVLmixins";
 @import "YVLanimations";
 
 
 /*Youri Van Laer*/
+/*banner*/
 .background-img{
   &-geocaching-people{
     @include fullBackgroundImg('../img/index/banner.jpg',400px);
   }
 }
 
+/*Youri Van Laer*/
+/*breakpoints*/
+@include media-breakpoint-down(sm) {
+  .background-img-geocaching-people{
+    background-position: center center;
+  }
+}

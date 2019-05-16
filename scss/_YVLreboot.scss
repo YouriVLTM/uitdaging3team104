@@ -2,6 +2,8 @@ body{
   font-family: $lettertype;
 }
 
+
+
 //function voor alle titels een ander lettertype
 @for $header from 1 through 6{
   h#{$header}{
@@ -20,4 +22,23 @@ body{
   &-nav{
     margin-top: $navbar_height;
   }
+}
+
+/*extreem*/
+.nav-extreem{
+  > li > a{
+    text-decoration: none;
+  }
+  > li > a:hover {
+    color: $primary_color !important;
+  }
+  > li > .active {
+    color: $primary_color !important;
+  }
+}
+
+/*color */
+#mapid {
+  height: 400px !important;
+  width:100%;
 }

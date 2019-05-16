@@ -24,7 +24,6 @@
   }
 }
 
-
 @keyframes fadeIn{
   from{
     opacity: 0;
@@ -96,7 +95,6 @@
   }
 }
 @keyframes animation {
-
   100% {
     background-position: 600px 0px;
   }
@@ -104,17 +102,14 @@
 
 @keyframes rotation {
   0%{
-    transform: rotate(0deg);
+    transform: rotate(10deg);
   }
 
-  33% {
-    transform: rotate(5deg);
-  }
-  66% {
-    transform: rotate(-5deg);
+  50% {
+    transform: rotate(-10deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(10deg);
   }
 }
 
@@ -137,23 +132,34 @@
 }
 @keyframes leftToRight{
   0%{
-    transform: translateY(-40vh) translateX(0);
+    transform: translateY(-40%) translateX(0);
   }
   100%{
-    transform: translateY(-50vh) translateX(95vw);
+    transform: translateY(-50%) translateX(100vw);
 
   }
 }
 
 @keyframes RightToLeft{
   0%{
-    transform: translateY(-120vh) translateX(95vw) rotate(-50deg);
-  }
-  50%{
-    transform: translateY(-100vh) translateX(50vw) rotate(-20deg);
+    transform: translateY(-1620%) translateX(100vw) rotate(-30deg);
   }
   100%{
-    transform: translateY(-120vh) translateX(0) rotate(10deg);
+    transform: translateY(-1300%) translateX(0) rotate(-30deg);
+
+  }
+}
+
+@keyframes dive{
+  0%{
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(400%);
+
+  }
+  100% {
+    transform: translateY(0%);
 
   }
 }

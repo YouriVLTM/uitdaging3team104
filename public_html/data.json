@@ -770,6 +770,7 @@
         }
       ]
     },
+    "Needs": ["Tandem"],
     "Location":{
       "Latitude":"51.150288",
       "Longitude":"5.074058",
@@ -806,6 +807,7 @@
         }
       ]
     },
+    "Needs": ["Basis pakket duiken","Minsten met 2 mensen"],
     "Location":{
       "Latitude":"51.323455",
       "Longitude":"5.419946",

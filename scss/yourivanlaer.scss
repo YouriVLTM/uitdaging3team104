@@ -1,40 +1,15 @@
 @import "huisstijl";
-// mixin
-// boodstrap
-
 
 //youri scss
 @import "YVLvariables";
 @import "YVLmixins";
-@import "YVLanimations";
 
 //opbouw
 @import "YVLreboot";
 @import "YVLbackground";
+@import "YVLanimations";
 
-
-
-/*extreem*/
-.nav-extreem{
-  > li > a{
-    text-decoration: none;
-  }
-  > li > a:hover {
-    color: $primary_color !important;
-  }
-  > li > .active {
-    color: $primary_color !important;
-  }
-}
-
-    /*color
-
-    #5e6754
-
-     */
-  #mapid {
-    height: 400px !important;
-    width:100%;
-  }
+/*breakpoints*/
+@import "YVLbreakpoints";
 
 
