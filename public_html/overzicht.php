@@ -118,7 +118,7 @@
             <?php foreach ($json_data as $count => $point): ?>
             <?php $delayValue = (string)($count%3*0.2);?>
                 <!-- blog item-->
-                <div class="col-sm-6 col-lg-4  mb-4 scroll notvisible" data-animation="fadeIn" data-animation-delay="<?php echo $delayValue;?>s">
+                <div id="<?php echo $point["Id"] ?>" class="col-sm-6 col-lg-4  mb-4 scroll notvisible" data-animation="fadeIn" data-animation-delay="<?php echo $delayValue;?>s">
                     <div class="card shadow border-0 h-100"><img src="img<?php echo $point["PictureUrl"];?>" alt="<?php echo $point["PictureUrl"];?>" class="img-fluid card-img-top">
                         <div class="card-body">
                             <div class="clearfix">
@@ -227,34 +227,51 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/leaflet-mapbox-gl.js"></script>
 <script>
-    var map = L.map('mapid', {
-        center: [51.142467, 5.080317],
-        zoom: 13
-    });
-
-    var defaultIcon = L.icon({
-        iconUrl: 'img/pot.png',
-        iconSize: [15, 35],
-        iconAnchor: [22, 94],
-        popupAnchor: [-3, -76]
-    });
+    $(document).ready(function() {
+        //tooltip
+        $('[data-toggle="tooltip"]').tooltip();
 
 
-    <?php foreach ($json_data as $point): ?>
+        //Maps
+        var map = L.map('mapid', {
+            center: [51.142467, 5.080317],
+            zoom: 13
+        });
+
+        var defaultIcon = L.icon({
+            iconUrl: 'img/pot.png',
+            iconSize: [15, 35],
+            iconAnchor: [22, 94],
+            popupAnchor: [-3, -76]
+        });
+
+        var extreemIcon = L.icon({
+            iconUrl: 'img/potExtreem.png',
+            iconSize: [15, 35],
+            iconAnchor: [22, 94],
+            popupAnchor: [-3, -76]
+        });
 
 
-L.marker([<?php echo $point["Location"]["Latitude"]; ?>, <?php echo $point["Location"]["Longitude"]; ?>],
-    {icon: defaultIcon}
-    )
-    .bindPopup("<h3><?php echo $point["Name"]; ?></h3><br><img src='img<?php echo $point["PictureUrl"];?>' style='height:130px' /><br><br><a href='point.php?pointId=<?php echo $point["Id"]; ?>'>Lees meer</a>")
+        <?php foreach ($json_data as $point): ?>
+
+
+        L.marker([<?php echo $point["Location"]["Latitude"]; ?>, <?php echo $point["Location"]["Longitude"]; ?>],
+            <?php echo $point["Quality"]["Categorie"] == "Easy" ? "{icon: defaultIcon}" : "{icon: extreemIcon}" ?>
+
+        )
+            .bindPopup("<h3><?php echo $point["Name"]; ?></h3><br><img src='img<?php echo $point["PictureUrl"];?>' style='height:130px' /><br><br><a href='point.php?pointId=<?php echo $point["Id"]; ?>'>Lees meer</a>")
             .addTo(map);
 
         <?php endforeach; ?>
 
-var gl = L.mapboxGL({
-    accessToken: 'no-token',
-    style: 'https://raw.githubusercontent.com/osm2vectortiles/mapbox-gl-styles/master/styles/bright-v9-cdn.json'
-}).addTo(map);
+        var gl = L.mapboxGL({
+            accessToken: 'no-token',
+            style: 'https://raw.githubusercontent.com/osm2vectortiles/mapbox-gl-styles/master/styles/bright-v9-cdn.json'
+        }).addTo(map);
+
+    })
+
 
 </script>
 <script src="js/youriAnimatie.js"></script>

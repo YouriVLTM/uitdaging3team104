@@ -86,7 +86,7 @@
 
                         <div class="clearfix">
                             <div class="float-left">
-                                <a href="overzicht.php"><i class="fa fa-long-arrow-alt-left mr-2"></i>Back to</a>
+                                <a href="overzicht.php#<?php echo $point["Id"]?>"><i class="fa fa-long-arrow-alt-left mr-2"></i>Terug</a>
                             </div>
                             <div class="float-right">
                                 <i class="fas fa-heart pr-2"></i><?php echo $point["visitors"];?>
@@ -100,7 +100,7 @@
                             <div class="col-sm-12 col-md-8 ">
                                 <div class="d-flex flex-row bd-highlight mb-3 align-items-center">
                                     <div class="p-2 bd-highlight">
-                                        <img src="img/pot.png" alt="geocach pot" style="height:50px">
+                                        <img src="<?php echo $point["Quality"]["Categorie"] == "Easy" ? "img/pot.png" : "img/potExtreem.png" ?>" alt="geocach pot" style="height:50px">
                                     </div>
                                     <div class="p-2 bd-highlight">
                                         <h2><?php echo $point["Name"]; ?> </h2>
@@ -130,7 +130,7 @@
                                     </div>
                                 </div>
 
-                                <?php if($point["Quality"]["Categorie"] == "easy"): ?>
+                                <?php if($point["Quality"]["Categorie"] == "Easy"): ?>
                                     <p>Categorie : <span class="badge badge-pill badge-success"><?php echo $point["Quality"]["Categorie"];?></span></p>
                                 <?php else: ?>
                                     <p>Categorie : <span class="badge badge-pill badge-danger"><?php echo $point["Quality"]["Categorie"];?></span></p>

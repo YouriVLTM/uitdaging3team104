@@ -7,7 +7,7 @@
 /*Youri Van Laer*/
 .background-img{
   &-geocaching-people{
-    @include fullBackgroundImg('../img/index/banner1.jpg',400px);
+    @include fullBackgroundImg('../img/index/banner.jpg',400px);
   }
 }
 

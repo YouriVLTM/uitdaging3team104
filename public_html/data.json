@@ -93,7 +93,8 @@
   {
     "Id":15,
     "Name": "Quad",
-    "Description": "",
+    "Description": "Rij met je quad de weide wereld in.",
+    "Needs": ["Quad","Helm","GPS toestel","Aangepast kledij"],
     "Date":{
       "Insert":"12/09/2018",
       "LastVisited":"Maart 10, 2018"
@@ -105,17 +106,23 @@
       "Categorie":"Extreem",
       "Reachability":[
         {
-          "Name": "Muurklimmen",
-          "Icon": "fas fa-shoe-prints"
+          "Name": "Quad",
+          "Icon": "fas fa-motorcycle"
         }
       ]
     },
-    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
+    "Reviews": [
+      {
+        "name":"Jan Peeters",
+        "datum":"30 min geleden",
+        "text":"Fantastische ervaring achter de rug. Alleen een beetje jammer dat het regende."
+      }
+    ],
     "Location":{
-      "Latitude":"51.151000",
-      "Longitude":"5.068533",
+      "Latitude":"51.151716",
+      "Longitude":"5.062566",
       "Altitude":"0",
-      "Stad": "Meerhout"
+      "Stad": "Geel"
     },
     "visitors": 200
 
@@ -186,8 +193,8 @@
     "Needs": ["Parachute","helm","GPS toestel"],
     "Location":{
       "Description": "Land en ga op zoek naar jou geocach.",
-      "Latitude":"51.167549",
-      "Longitude":"5.076971",
+      "Latitude":"51.167559",
+      "Longitude":"5.075512",
       "Altitude":"0",
       "Stad": "Geel",
       "Startpunt":{
@@ -242,7 +249,6 @@
         }
       ]
     },
-    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
     "Location":{
       "Latitude":"51.140317",
       "Longitude":"5.079067",
@@ -255,7 +261,7 @@
   {
     "Id":17,
     "Name": "Kano",
-    "Description": "",
+    "Description": "Ben je een ochtendmens en hou je liever van rust en stilte? Kom maar snel een kijkje nemen met je kano.",
     "Date":{
       "Insert":"12/09/2018",
       "LastVisited":"Maart 10, 2018"
@@ -267,18 +273,32 @@
       "Categorie":"Extreem",
       "Reachability":[
         {
-          "Name": "Muurklimmen",
-          "Icon": "fas fa-shoe-prints"
+          "Name": "Kano",
+          "Icon": "fas fa-ship"
         }
       ]
     },
-    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
+    "Needs": ["Kano","Aangepast kledij","GPS toestel"],
     "Location":{
-      "Latitude":"51.151000",
-      "Longitude":"5.068533",
+      "Latitude":"51.233157",
+      "Longitude":"4.985374",
       "Altitude":"0",
-      "Stad": "Meerhout"
+      "Stad": "Kasterlee",
+      "Startpunt":{
+        "Description": "Ga naar een dichtstbijzijnde rivier. <br> Suggesties: Kempen kayaks",
+        "Latitude":"51.243799 ",
+        "Longitude":"5.051969",
+        "Altitude":"0",
+        "Stad": "Watermolen (Retie)"
+      }
     },
+    "Reviews": [
+      {
+        "name":"Piet Helsen",
+        "datum":"2 min geleden",
+        "text":"Genieten!"
+      }
+    ],
     "visitors": 200
 
   },
@@ -314,13 +334,24 @@
         }
       ]
     },
-    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
     "Location":{
       "Latitude":"51.142467",
       "Longitude":"5.080317",
       "Altitude":"0",
       "Stad": "Meerhout"
     },
+    "Reviews": [
+      {
+        "name":"Kato nicasi",
+        "datum":"2 min geleden",
+        "text":"Top ervaring op een top locatie!"
+      },
+      {
+        "name":"Youri Van Laer ",
+        "datum":"10 min geleden",
+        "text":"Een lastige klus. Maar we hebben de geocach gevonden."
+      }
+    ],
     "visitors": 30
 
   },
@@ -497,11 +528,12 @@
   {
     "Id":16,
     "Name": "Ski",
-    "Description": "",
+    "Description": "Houdt u eerder van een frisse omgeving en wil je tijdens de winter maanden toch deelnemen aan geocaching? <br> Ski over de bergen en ga opzoek naar jouw geoach!",
     "Date":{
       "Insert":"12/09/2018",
-      "LastVisited":"Maart 10, 2018"
+      "LastVisited":"Maart 10, 2019"
     },
+    "Needs": ["Ski's","Aangepast kledij","GPS toestel"],
     "PictureUrl":"/overzicht/ski.jpg",
     "Quality":{
       "Difficult" : "6",
@@ -509,18 +541,31 @@
       "Categorie":"Extreem",
       "Reachability":[
         {
-          "Name": "Muurklimmen",
-          "Icon": "fas fa-shoe-prints"
+          "Name": "Skiën",
+          "Icon": "fas fa-snowboarding"
         }
       ]
     },
-    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
     "Location":{
-      "Latitude":"51.151000",
-      "Longitude":"5.068533",
+      "Latitude":"47.487062",
+      "Longitude":"9.983382",
       "Altitude":"0",
-      "Stad": "Meerhout"
+      "Stad": "Gemeinde Riefensberg, Oostenrijk",
+      "Startpunt":{
+        "Description": "Ga naar een dichtstbijzijnde skilift. <br> Suggesties: Hennenmoos (Seilbahn)",
+        "Latitude":"47.488679",
+        "Longitude":"9.988338",
+        "Altitude":"0",
+        "Stad": "Gschlötteralpe, 6943, Oostenrijk"
+      }
     },
+    "Reviews": [
+      {
+        "name":"Rudy puts",
+        "datum":"50 min geleden",
+        "text":"De mooie natuur bewonderen. Prachtig!"
+      }
+    ],
     "visitors": 200
 
   },
@@ -552,7 +597,6 @@
         }
       ]
     },
-    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
     "Location":{
       "Latitude":"51.153467",
       "Longitude":"5.076617",
@@ -595,7 +639,7 @@
   {
     "Id":11,
     "Name": "Mountainbike",
-    "Description": "",
+    "Description": "Ga met je mountainbike op zoek naar de geocach.",
     "Date":{
       "Insert":"12/09/2018",
       "LastVisited":"Maart 10, 2018"
@@ -607,17 +651,16 @@
       "Categorie":"Extreem",
       "Reachability":[
         {
-          "Name": "te voet",
-          "Icon": "fas fa-walking"
+          "Name": "Mountainbike",
+          "Icon": "fas fa-bicycle"
         }
       ]
     },
-    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
     "Location":{
-      "Latitude":"51.151000",
-      "Longitude":"5.068533",
+      "Latitude":"51.029895",
+      "Longitude":"4.555885",
       "Altitude":"0",
-      "Stad": "Meerhout"
+      "Stad": "Bonheiden, 2820 Bonheiden"
     },
     "visitors": 324
 
@@ -625,11 +668,12 @@
   {
     "Id":13,
     "Name": "Drone",
-    "Description": "",
+    "Description": "Is geocaching iets te actief en wil je toch thuis in de zetel deelnemen, zet je drone in om te navigeren naar een locatie.",
     "Date":{
       "Insert":"12/09/2018",
       "LastVisited":"Maart 10, 2018"
     },
+    "Needs": ["Drone","Drone certificaat!","GPS toestel"],
     "PictureUrl":"/overzicht/drone.png",
     "Quality":{
       "Difficult" : "6",
@@ -642,24 +686,38 @@
         }
       ]
     },
-    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
     "Location":{
-      "Latitude":"51.151000",
-      "Longitude":"5.068533",
+      "Latitude":"51.144130",
+      "Longitude":"5.023799",
       "Altitude":"0",
-      "Stad": "Meerhout"
+      "Stad": "Scherpenbergen",
+      "Startpunt":{
+        "Description": "Laat je drone opstijgen op een veilige locatie.",
+        "Latitude":"51.148890",
+        "Longitude":"5.025879",
+        "Altitude":"0",
+        "Stad": "2440 Geel"
+      }
     },
+    "Reviews": [
+      {
+        "name":"Jolien Van Sante",
+        "datum":"55 min geleden",
+        "text":"Leuke ervaring."
+      }
+    ],
     "visitors": 200
 
   },
   {
     "Id":14,
     "Name": "Muurklimmen",
-    "Description": "",
+    "Description": "Klim over bergen op zoek naar jou ultieme uitdaging.",
     "Date":{
       "Insert":"12/09/2018",
       "LastVisited":"Maart 10, 2018"
     },
+    "Needs": ["Aangepaste Schoenen","Helm","GPS toestel","Veiligheidsriemen","Basis pakket"],
     "PictureUrl":"/overzicht/wallClimbing.jpg",
     "Quality":{
       "Difficult" : "6",
@@ -672,13 +730,19 @@
         }
       ]
     },
-    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
     "Location":{
       "Latitude":"51.151000",
       "Longitude":"5.068533",
       "Altitude":"0",
       "Stad": "Meerhout"
     },
+    "Reviews": [
+      {
+        "name":"Jolien Van Sante",
+        "datum":"55 min geleden",
+        "text":"Leuke ervaring."
+      }
+    ],
     "visitors": 200
 
   },
