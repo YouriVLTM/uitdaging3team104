@@ -749,7 +749,7 @@
   {
     "Id":18,
     "Name": "Tandem",
-    "Description": "",
+    "Description": "Ben je een echte levensgenieter en heb je zin in een dagje uit met familie of vrienden? Dan is de tandem echt iets voor jou!",
     "Date":{
       "Insert":"12/09/2018",
       "LastVisited":"Maart 10, 2018"
@@ -761,25 +761,35 @@
       "Categorie":"Extreem",
       "Reachability":[
         {
-          "Name": "Muurklimmen",
-          "Icon": "fas fa-shoe-prints"
+          "Name": "Fiets",
+          "Icon": "fas fa-bicycle"
+        },
+        {
+          "Name": "te voet",
+          "Icon": "fas fa-walking"
         }
       ]
     },
-    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
     "Location":{
-      "Latitude":"51.151000",
-      "Longitude":"5.068533",
+      "Latitude":"51.150288",
+      "Longitude":"5.074058",
       "Altitude":"0",
       "Stad": "Meerhout"
     },
+    "Reviews": [
+      {
+        "name":"Joziefien Verlinde",
+        "datum":"20 min geleden",
+        "text":"Een leuk uitstapje met het gezin!"
+      }
+    ],
     "visitors": 200
 
   },
   {
     "Id":19,
     "Name": "Duiken",
-    "Description": "",
+    "Description": "Hou je het liever wat mysterieuzer? Ga dan zeker op zoek naar jouw geocach tussen de vissen.",
     "Date":{
       "Insert":"12/09/2018",
       "LastVisited":"Maart 10, 2018"
@@ -791,18 +801,31 @@
       "Categorie":"Extreem",
       "Reachability":[
         {
-          "Name": "Muurklimmen",
-          "Icon": "fas fa-shoe-prints"
+          "Name": "Duiken",
+          "Icon": "fas fa-swimmer"
         }
       ]
     },
-    "Activity": ["helo","lkqsdjflm","qslmkdjf"],
     "Location":{
-      "Latitude":"51.151000",
-      "Longitude":"5.068533",
+      "Latitude":"51.323455",
+      "Longitude":"5.419946",
       "Altitude":"0",
-      "Stad": "Meerhout"
+      "Stad": "Kempervennendreef 8 (Nederland)",
+      "Startpunt":{
+        "Description": "Doe je fles om en spring het water in.",
+        "Latitude":"51.325685",
+        "Longitude":"5.423036",
+        "Altitude":"0",
+        "Stad": "Kempervennendreef (Nederland)"
+      }
     },
+    "Reviews": [
+    {
+      "name":"Aline Verstappen",
+      "datum":"10 min geleden",
+      "text":"Wat een uitzicht. Geocach was moeilijk te vinden. Wie zoek die vindt. "
+    }
+  ],
     "visitors": 200
 
   }
