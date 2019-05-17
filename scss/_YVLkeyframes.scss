@@ -23,7 +23,6 @@
     transform: translateX(0%);
   }
 }
-
 @keyframes fadeIn{
   from{
     opacity: 0;
@@ -47,7 +46,6 @@
     opacity: 1;
   }
 }
-
 @keyframes drone{
   from{
     transform: translateX(-150%) translateY(-80%);
@@ -57,18 +55,6 @@
     transform: translateX(0%) translateY(0%);
   }
 }
-
-@keyframes wolk{
-  from{
-    transform: translateX(0%);
-
-  }
-  to{
-    transform: translateX(-150%);
-  }
-}
-
-
 @keyframes borderLightUp{
   0%{
     border-width: 0.2px;
@@ -94,12 +80,6 @@
     box-shadow : none;
   }
 }
-@keyframes animation {
-  100% {
-    background-position: 600px 0px;
-  }
-}
-
 @keyframes rotation {
   0%{
     transform: rotate(10deg);

@@ -3,7 +3,6 @@ body{
 }
 
 
-
 //function voor alle titels een ander lettertype
 @for $header from 1 through 6{
   h#{$header}{

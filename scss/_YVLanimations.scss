@@ -41,14 +41,14 @@
   background-repeat: repeat-x;
   @include animation(animation,10s,infinite,linear);
 }
-.boat{
+/*.boat{
   position: relative;
   > img{
     position: absolute;
     top: -78px;
     @include animation(rotation,2s,infinite,ease-in-out);
   }
-}
+}*/
 .dive{
   position: relative;
   > img{
@@ -93,9 +93,6 @@
     border: 2px solid lighten($color-water,50%);//#8ec9ff;
     opacity:0.5;
     animation: bubbelsFly 8s infinite linear;
-
-
-
     @for $i from 1 to $aantalBubbels {
       &:nth-child(#{$i}) {
         $rad:#{random(50)+5}px;
@@ -184,7 +181,6 @@
 
   }
 }
-
 .kist{
   &-top{
     position: relative;
