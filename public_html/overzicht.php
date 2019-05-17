@@ -231,7 +231,6 @@
         //tooltip
         $('[data-toggle="tooltip"]').tooltip();
 
-
         //Maps
         var map = L.map('mapid', {
             center: [51.142467, 5.080317],
