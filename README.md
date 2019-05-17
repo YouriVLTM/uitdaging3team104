@@ -34,9 +34,5 @@ Google
 <h3>Tools</h3>
 
 - YouriVLTM : Cards, Tooltips, navs
-- vranckxrobin : ...
+- vranckxrobin : modale vensters
 
-
-
-Youri
--> globaal variable banner size
