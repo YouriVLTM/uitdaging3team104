@@ -252,10 +252,7 @@
             popupAnchor: [-3, -76]
         });
 
-
         <?php foreach ($json_data as $point): ?>
-
-
         L.marker([<?php echo $point["Location"]["Latitude"]; ?>, <?php echo $point["Location"]["Longitude"]; ?>],
             <?php echo $point["Quality"]["Categorie"] == "Easy" ? "{icon: defaultIcon}" : "{icon: extreemIcon}" ?>
 
